@@ -18,10 +18,10 @@ module.exports = class Selector {
 
     /*
     * @dev check if a validator has a verified identity
-    * @param id - the identifier for the validator
+    * @param accountId - the identifier for the validator
     * @returns boolean - true if identity is verified else false
     * */
-    async getIsVerified(id) {};
+    async getIsVerified(accountId) {};
 
     /*
     * @dev return validators that meet the criteria as set in the README
@@ -32,22 +32,22 @@ module.exports = class Selector {
 
     /*
     * @dev get the commission rate of the validator
-    * @param id - the identifier for the validator
+    * @param accountId - the identifier for the validator
     * @returns a number with the commission rate
     * */
-    async getCommissionRate(id) {};
+    async getCommissionRate(accountId) {};
 
     /*
     * @dev see how much skin in the game that a validator has by checking their stake in their own pool
-    * @param id - the identifier for the validator
+    * @param accountId - the identifier for the validator
     * @returns a number with the amount of tokens they have staked
     * */
-    async getStakeInPool(id) {};
+    async getStakeInPool(accountId) {};
 
     /*
     * @dev check if a validator has been slashed before
-    * @param id - the identifier for the validator
+    * @param accountId - the identifier for the validator
     * @returns boolean - true if has been slashed else false
     * */
-    async getHasBeenSlashed(id) {};
+    async getHasBeenSlashed(accountId) {};
 }
