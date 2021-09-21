@@ -14,4 +14,4 @@ This program selects validators based on the following criteria:
 - Has never been slashed
 
 ## Getting started
-Install the modules with `npm i`
+Install the modules with `npm i` & run the tests with `npm run test`
