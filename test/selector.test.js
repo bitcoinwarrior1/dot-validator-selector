@@ -36,4 +36,14 @@ describe("selector functionality", () => {
         expect(beenSlashed).to.equal(true, "this entity has been slashed before");
     });
 
+    it("should be able to get unique validators run by separate entities", async() => {
+        const validatorObjectsNotUnique = [
+            {name: "Zug capital 1", accountId: ""},
+            {name: "Zug capital 2", accountId: ""},
+            {name: "Hypersphere", accountId: ""}
+        ];
+        const uniqueObjects = await this.selector.removeDuplicates(validatorObjectsNotUnique);
+        expect(uniqueObjects.length).to.equal(2, "Should have removed duplicate zug capital");
+    });
+
 });

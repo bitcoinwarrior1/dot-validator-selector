@@ -1,9 +1,3 @@
-const request = require("superagent");
-const endpoints = {
-    "DOT": "https://polkadot.api.subscan.io",
-    "KSM": "https://kusama.api.subscan.io"
-}
-
 module.exports = class Selector {
 
     /*
@@ -50,4 +44,11 @@ module.exports = class Selector {
     * @returns boolean - true if has been slashed else false
     * */
     async getHasBeenSlashed(accountId) {};
+
+    /*
+    * @dev remove validators that are run by the same entity e.g. zug capital 1 and zug capital 2 should just be zug capital 1
+    * @param validatorsObj - an object containing information about the validators
+    * @returns validatorsObj with duplicates removed
+    * */
+    async removeDuplicates(validatorsObj) {};
 }
