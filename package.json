@@ -1,0 +1,26 @@
+{
+  "name": "dot-validator-selector",
+  "version": "1.0.0",
+  "description": "Get the best staking validators programmatically ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Sangalli/dot-validator-selector.git"
+  },
+  "author": "James Sangalli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/James-Sangalli/dot-validator-selector/issues"
+  },
+  "homepage": "https://github.com/James-Sangalli/dot-validator-selector#readme",
+  "dependencies": {
+    "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
