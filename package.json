@@ -4,7 +4,7 @@
   "description": "Get the best staking validators programmatically ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --exit --recursive"
+    "test": "mocha --exit --recursive --timeout=50000"
   },
   "repository": {
     "type": "git",
