@@ -1,0 +1,60 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,300);
+html{
+    background: rgb(66, 66, 186);
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    font-family:'Roboto', sans-serif;
+}
+
+p{
+    font-weight: 300;
+    color: #FFD700;
+}
+
+#container{
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+
+    color: white;
+    font-size: 60px;
+}
+#address{
+    width: 80%;
+    height: 60px;
+    max-width: 100%;
+    max-height: 100%;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 20px;
+}
+
+#downloadButton{
+    width: 200px;
+    height: 40px;
+    margin-top: 2.5%;
+    font-size: 100%;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+
+}
+
+#results{
+    display: block;
+    width: 100%;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFD700;
+}
+
+.posters{
+    display: inline-block;
+    padding: 100px;
+}

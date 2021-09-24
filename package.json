@@ -4,7 +4,8 @@
   "description": "Get the best staking validators programmatically ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --exit --recursive --timeout=50000"
+    "test": "mocha --exit --recursive --timeout=50000",
+    "bundle": "browserify web-sample/index.js -p esmify > web-sample/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,9 @@
     "@polkadot/api": "^6.0.5"
   },
   "devDependencies": {
+    "browser-resolve": "^2.0.0",
     "chai": "^4.3.4",
+    "esmify": "^2.1.1",
     "mocha": "^9.1.1"
   }
 }
