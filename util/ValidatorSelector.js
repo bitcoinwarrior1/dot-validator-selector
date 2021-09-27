@@ -107,7 +107,7 @@ class ValidatorSelector {
         const slashes = await this.api.query.staking.slashingSpans(accountId);
         if(slashes.isEmpty) return false;
 
-        return slashes.lastNonzeroSlash !== 0;
+        return JSON.parse(slashes).lastNonzeroSlash !== 0;
     };
 
 }
