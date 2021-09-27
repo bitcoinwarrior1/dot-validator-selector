@@ -7,11 +7,13 @@ Selecting validators for staking your DOT/KSM is an arduous process and one that
 ## Criteria
 This program selects validators based on the following criteria:
 - Identity is verified
-- Commission is acceptable
+- Commission is acceptable (<20%)
 - Validator is not oversubscribed 
 - Has own stake in the pool 
 - Unique entities i.e. this won't select more than 1 of each type e.g. Zug capital but not 10 zug capital entities 
 - Has never been slashed
+
+Further reading [here](https://wiki.polkadot.network/docs/learn-nominator#filter-out-validators-with-undesirable-traits)
 
 ## Getting started
 Install the modules with `npm i` & run the tests with `npm run test`
