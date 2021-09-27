@@ -103,11 +103,11 @@ class ValidatorSelector {
     * @param era - the epoch to check for slashing
     * @returns boolean - true if has been slashed else false
     * */
-    // TODO figure out how to find any slashes at anytime
     async getHasBeenSlashed(accountId) {
-        const slashes = await this.api.query.staking.validatorSlashInEra(this.era, accountId);
+        const slashes = await this.api.query.staking.slashingSpans(accountId);
+        if(slashes.isEmpty) return false;
 
-        return !slashes.isEmpty;
+        return slashes.lastNonzeroSlash !== 0;
     };
 
 }
