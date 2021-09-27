@@ -14,6 +14,8 @@ describe("ValidatorSelector functionality", () => {
     it("should be able to find a validators that meet all the criteria", async () => {
         const validators = await this.selector.getValidators(12);
         expect(validators.length).to.equal(12, "should have found 12 validators");
+        expect(parseFloat(validators[0].commission) <= 20, "commission should not be higher than 20%");
+        expect(parseFloat(validators[0].deposit) >= (1000 * 1e7), "staking should be at least 1000 * 1e7");
     });
 
     it("should see that zug capital meets the criteria in era 482", async () => {
