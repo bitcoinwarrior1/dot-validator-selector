@@ -76615,7 +76615,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("validators").innerText = validators.map((v) => {
         return v.accountId;
     }).join("\n");
-    document.getElementById("status").hidden = false;
+    document.getElementById("status").hidden = true;
 });
 },{"../util/ValidatorSelector":990,"@polkadot/api":139}],992:[function(require,module,exports){
 var asn1 = exports;

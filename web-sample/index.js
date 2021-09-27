@@ -9,5 +9,5 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.getElementById("validators").innerText = validators.map((v) => {
         return v.accountId;
     }).join("\n");
-    document.getElementById("status").hidden = false;
+    document.getElementById("status").hidden = true;
 });
