@@ -37,7 +37,7 @@ describe("ValidatorSelector functionality", () => {
     });
 
     it("should be able to check if the validator has been slashed before", async() => {
-        const beenSlashed = await this.selector.getHasBeenSlashed(zugCapital2, 0);
+        const beenSlashed = await this.selector.getHasBeenSlashed(zugCapital2);
         expect(beenSlashed).to.equal(false, "this entity has not been slashed in era 0");
     });
 
