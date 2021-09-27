@@ -76490,15 +76490,16 @@ module.exports = XXH64
 class ValidatorSelector {
 
     /*
-    * @param maxCommission - the maximum commission a nominator is willing to accept from a validator, defaults to 5%
+    * @param maxCommission - the maximum commission a nominator is willing to accept from a validator, defaults to 20%
     * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param api - the initialised @polkadot/api instance
     * */
     constructor(maxCommission, minStaking, api) {
         // TODO verify the number scales
-        this.maxCommission = (maxCommission ?? 5) * 1e10;
+        this.maxCommission = (maxCommission ?? 20) * 1e10;
         this.minStaking = (minStaking ?? 1000) * 1e10;
         this.api = api;
+        this.currentEra = 0;
     }
 
     /*
@@ -76507,6 +76508,7 @@ class ValidatorSelector {
     * @returns an array of objects containing validator info that meets this criteria
     * */
     async getValidators(amount) {
+        this.currentEra = (await this.api.query.staking.activeEra).index;
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
         const validators = await this.api.query.session.validators();
@@ -76535,10 +76537,16 @@ class ValidatorSelector {
       * @dev check if a validator is oversubscribed
       * @param accountId - the validators account id
       * @returns boolean, true if oversubscribed else false
-  * */
+    * */
     async getIsOverSubscribed(accountId) {
-        // TODO figure this out
-        //const max = await this.api.consts.staking.maxNominatorRewardedPerValidator;
+        const max = await this.api.consts.staking.maxNominatorRewardedPerValidator;
+        const exposure = await this.api.query.staking.erasStakers(this.currentEra, accountId);
+        if(!exposure.isEmpty) {
+            if(exposure.others.length > max) {
+                return true;
+            }
+        }
+
         return false;
     }
 
@@ -76552,7 +76560,7 @@ class ValidatorSelector {
         if(overSubscribed) return false;
         const meetsCommissionRequirement = await this.getMeetsCommissionRequirement(accountId);
         if(!meetsCommissionRequirement) return false;
-        const hasBeenSlashed = await this.getHasBeenSlashed(accountId, 0);
+        const hasBeenSlashed = await this.getHasBeenSlashed(accountId);
 
         return !hasBeenSlashed;
     }
@@ -76586,8 +76594,8 @@ class ValidatorSelector {
     * @returns boolean - true if has been slashed else false
     * */
     // TODO figure out how to find any slashes at anytime
-    async getHasBeenSlashed(accountId, era) {
-        const slashes = await this.api.query.staking.validatorSlashInEra(accountId, era);
+    async getHasBeenSlashed(accountId) {
+        const slashes = await this.api.query.staking.validatorSlashInEra(accountId, this.currentEra);
 
         return !slashes.isEmpty;
     };
@@ -76603,9 +76611,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     const api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.elara.patract.io") });
     const selector = new ValidatorSelector(1, 0, api);
     const validators = await selector.getValidators(12);
+    // TODO make more presentable
     document.getElementById("validators").innerText = validators.map((v) => {
         return v.accountId;
     }).join("\n");
+    document.getElementById("status").hidden = false;
 });
 },{"../util/ValidatorSelector":990,"@polkadot/api":139}],992:[function(require,module,exports){
 var asn1 = exports;
