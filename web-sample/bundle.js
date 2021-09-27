@@ -76487,19 +76487,35 @@ module.exports = XXH64
 
 }).call(this,require("buffer").Buffer)
 },{"buffer":1037,"cuint":718}],990:[function(require,module,exports){
+const decimals = 1e7;
+
 class ValidatorSelector {
 
     /*
     * @param maxCommission - the maximum commission a nominator is willing to accept from a validator, defaults to 20%
     * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param api - the initialised @polkadot/api instance
+    * @param era - the era to use, defaults to 0 but set to current era in getValidators if not overridden in constructor
     * */
-    constructor(maxCommission, minStaking, api) {
-        // TODO verify the number scales
-        this.maxCommission = (maxCommission ?? 20) * 1e10;
-        this.minStaking = (minStaking ?? 1000) * 1e10;
+    constructor(
+        api,
+        maxCommission = 20 * decimals,
+        minStaking = 1000 * decimals,
+        era = 0
+    ) {
         this.api = api;
-        this.currentEra = 0;
+        this.maxCommission = maxCommission;
+        this.minStaking = minStaking;
+        this.era = era;
+    }
+
+    /*
+    * @dev set the era to the current one if not set in constructor to a non zero value
+    * */
+    async setEraToCurrentIfZero() {
+        if(this.era !== 0) {
+            this.era = JSON.parse(await this.api.query.staking.activeEra()).index;
+        }
     }
 
     /*
@@ -76508,7 +76524,7 @@ class ValidatorSelector {
     * @returns an array of objects containing validator info that meets this criteria
     * */
     async getValidators(amount) {
-        this.currentEra = (await this.api.query.staking.activeEra).index;
+        await this.setEraToCurrentIfZero();
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
         const validators = await this.api.query.session.validators();
@@ -76517,12 +76533,15 @@ class ValidatorSelector {
             const identity = await this.api.query.identity.identityOf(validator);
             if(!identity.isEmpty) {
                 const { info, deposit } = JSON.parse(identity);
+                const commission = (await this.api.query.staking.validators(validator)).commission.toNumber();
                 if(validatorDisplays[info.display.raw] !== true) {
-                    const meetsCriteria = await this.getMeetsCriteria(validator);
-                    if(meetsCriteria && deposit >= this.minStaking) {
+                    const meetsCriteria = await this.getMeetsCriteria(validator, deposit, commission);
+                    if(meetsCriteria) {
                         validatorsMeetingCriteria.push({
                             accountId: validator.toString(),
-                            identity: info
+                            identity: info,
+                            staked: deposit,
+                            commission: commission === 0 ? "0%" : `${commission / decimals}%`
                         });
                         validatorDisplays[info.display.raw] = true;
                     }
@@ -76540,7 +76559,7 @@ class ValidatorSelector {
     * */
     async getIsOverSubscribed(accountId) {
         const max = await this.api.consts.staking.maxNominatorRewardedPerValidator;
-        const exposure = await this.api.query.staking.erasStakers(this.currentEra, accountId);
+        const exposure = await this.api.query.staking.erasStakers(this.era, accountId);
         if(!exposure.isEmpty) {
             if(exposure.others.length > max) {
                 return true;
@@ -76553,39 +76572,19 @@ class ValidatorSelector {
     /*
    * @dev check if a validator meets the criteria (except for uniqueness)
    * @param accountId - the validators account id
+   * @param staked - the amount the validator has staked
+   * @param commission - the commission the validator charges to nominators
    * @returns boolean, true if meets criteria else false
    * */
-    async getMeetsCriteria(accountId) {
+    async getMeetsCriteria(accountId, staked, commission) {
+        if(staked < this.minStaking) return false;
+        if(commission > this.maxCommission) return false;
         const overSubscribed = await this.getIsOverSubscribed(accountId);
         if(overSubscribed) return false;
-        const meetsCommissionRequirement = await this.getMeetsCommissionRequirement(accountId);
-        if(!meetsCommissionRequirement) return false;
         const hasBeenSlashed = await this.getHasBeenSlashed(accountId);
 
         return !hasBeenSlashed;
     }
-
-    /*
-    * @dev check if a validator has a verified identity
-    * @param accountId - the identifier for the validator
-    * @returns boolean - true if identity is verified else false
-    * */
-    async getIsVerified(accountId) {
-        const identity = await this.api.query.identity.identityOf(accountId);
-
-        return !identity.isEmpty;
-    };
-
-    /*
-    * @dev check if the commission set by the validator is acceptable
-    * @param accountId - the identifier for the validator
-    * @returns boolean - true if acceptable else false
-    * */
-    async getMeetsCommissionRequirement(accountId) {
-        const commission = (await this.api.query.staking.validators(accountId)).commission.toNumber();
-
-        return commission <= this.maxCommission;
-    };
 
     /*
     * @dev check if a validator has been slashed before
@@ -76595,7 +76594,7 @@ class ValidatorSelector {
     * */
     // TODO figure out how to find any slashes at anytime
     async getHasBeenSlashed(accountId) {
-        const slashes = await this.api.query.staking.validatorSlashInEra(accountId, this.currentEra);
+        const slashes = await this.api.query.staking.validatorSlashInEra(this.era, accountId);
 
         return !slashes.isEmpty;
     };
@@ -76609,11 +76608,10 @@ const { ApiPromise, WsProvider} = require("@polkadot/api");
 
 document.addEventListener("DOMContentLoaded", async () => {
     const api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.elara.patract.io") });
-    const selector = new ValidatorSelector(1, 0, api);
+    const selector = new ValidatorSelector(api);
     const validators = await selector.getValidators(12);
-    // TODO make more presentable
-    document.getElementById("validators").innerText = validators.map((v) => {
-        return v.accountId;
+    document.getElementById("validators").innerText = validators.map((v, i) => {
+        return `${++i}. address: ${v.accountId} commission: ${v.commission}`;
     }).join("\n");
     document.getElementById("status").hidden = true;
 });
