@@ -76552,6 +76552,44 @@ class ValidatorSelector {
         return validatorsMeetingCriteria;
     };
 
+
+    // /*
+    //   * @dev helper to resolve the identity fields
+    //   * @param id - the identity object
+    //   * @returns the parsed identity object from hex string bytes to utf8
+    // * */
+    // convertIdentityToReadableFormat(id) {
+    //     const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
+    //
+    //     return {
+    //         display: this.hexToUtf8(display.raw),
+    //         legal: this.hexToUtf8(legal.raw),
+    //         web: this.hexToUtf8(web.raw),
+    //         riot: this.hexToUtf8(riot.raw),
+    //         email: this.hexToUtf8(email.raw),
+    //         pgpFingerprint: this.hexToUtf8(pgpFingerprint.raw),
+    //         image: this.hexToUtf8(image.raw),
+    //         twitter: this.hexToUtf8(twitter.raw)
+    //     }
+    // }
+
+    /*
+      * @dev helper to convert from hex string bytes to utf8
+      * @param s - hex string of bytes
+      * @returns utf8 encoded string
+    * */
+    hexToUtf8(s) {
+        try {
+            return decodeURIComponent(
+                s.replace(/\s+/g, '') // remove spaces
+                    .replace(/[0-9a-f]{2}/g, '%$&') // add '%' before each 2 characters
+            );
+        } catch {
+            return "";
+        }
+
+    }
+
     /*
       * @dev check if a validator is oversubscribed
       * @param accountId - the validators account id
@@ -76611,7 +76649,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const selector = new ValidatorSelector(api);
     const validators = await selector.getValidators(12);
     document.getElementById("validators").innerText = validators.map((v, i) => {
-        return `${++i}. address: ${v.accountId} commission: ${v.commission}`;
+        return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${selector.hexToUtf8(v.identity.display.raw.substring(2))}`;
     }).join("\n");
     document.getElementById("status").hidden = true;
 });
