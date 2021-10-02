@@ -35,3 +35,7 @@ selector.getValidators(n);
 
 ## See a sample
 If you want to see this module in action, go to [this website](https://james-sangalli.github.io/dot-validator-selector/) you'll have the option to select between the Polkadot and Kusama networks after which 16 validators will be displayed if you selected Polkadot and 24 if you selected Kusama.
+
+## Tip
+KSM: J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb
+DOT: 16UX9vXqh11QDTuVebLZMPSeFLTJhMifRiuKR4nwSd5fGQJz
