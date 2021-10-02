@@ -11,13 +11,18 @@
 <body>
 <div id='container'>
     <h1 class="title">Validator Selector Example</h1>
-    <p>This tool will select 12 Polkadot validators meeting the criteria set out <a href="https://github.com/James-Sangalli/dot-validator-selector/blob/gh-pages/README.md#criteria">here.</a></p>
+    <h3>This tool will select validators meeting the criteria set out <a href="https://github.com/James-Sangalli/dot-validator-selector/blob/gh-pages/README.md#criteria">here.</a></h3>
     <div id="gh">
         <a href="https://github.com/James-Sangalli/dot-validator-selector" target="_blank">
             <img alt="GitHub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="40" height="40"/>
         </a>
     </div>
-    <h1 id="status">Loading, please wait...</h1>
+    <h1 id="status" hidden>Loading, please wait...</h1>
+    <input type="radio" id="DOT" name="network" value="DOT" checked="checked">
+    <label for="DOT">DOT</label><br>
+    <input type="radio" id="KSM" name="network" value="KSM">
+    <label for="KSM">KSM</label><br>
+    <button id="submit">Get validators</button>
     <p id="validators"></p>
 </div>
 </body>
