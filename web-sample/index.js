@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         let amt = 16;
         let api;
         if(isKSM) {
-            api = await ApiPromise.create({ provider: new WsProvider("wss://kusama-rpc.polkadot.io/") });
+            api = await ApiPromise.create({ provider: new WsProvider("wss://kusama.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7") });
             amt = 24;
         } else {
-            api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.elara.patract.io") });
+            api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7") });
         }
         const selector = new ValidatorSelector(api);
         const validators = await selector.getValidators(amt);

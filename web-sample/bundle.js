@@ -76529,7 +76529,9 @@ class ValidatorSelector {
         const validatorsMeetingCriteria = [];
         const validators = await this.api.query.session.validators();
         for(const validator of validators) {
-            if(validatorsMeetingCriteria.length === amount) return validatorsMeetingCriteria;
+            if(validatorsMeetingCriteria.length === amount) {
+                return validatorsMeetingCriteria;
+            }
             const identity = await this.api.query.identity.identityOf(validator);
             if(!identity.isEmpty) {
                 const { info, deposit } = JSON.parse(identity);
@@ -76553,25 +76555,25 @@ class ValidatorSelector {
     };
 
 
-    // /*
-    //   * @dev helper to resolve the identity fields
-    //   * @param id - the identity object
-    //   * @returns the parsed identity object from hex string bytes to utf8
-    // * */
-    // convertIdentityToReadableFormat(id) {
-    //     const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
-    //
-    //     return {
-    //         display: this.hexToUtf8(display.raw),
-    //         legal: this.hexToUtf8(legal.raw),
-    //         web: this.hexToUtf8(web.raw),
-    //         riot: this.hexToUtf8(riot.raw),
-    //         email: this.hexToUtf8(email.raw),
-    //         pgpFingerprint: this.hexToUtf8(pgpFingerprint.raw),
-    //         image: this.hexToUtf8(image.raw),
-    //         twitter: this.hexToUtf8(twitter.raw)
-    //     }
-    // }
+    /*
+      * @dev helper to resolve the identity fields
+      * @param id - the identity object
+      * @returns the parsed identity object from hex string bytes to utf8
+    * */
+    convertIdentityToReadableFormat(id) {
+        const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
+
+        return {
+            display: this.hexToUtf8(display.raw),
+            legal: this.hexToUtf8(legal.raw),
+            web: this.hexToUtf8(web.raw),
+            riot: this.hexToUtf8(riot.raw),
+            email: this.hexToUtf8(email.raw),
+            pgpFingerprint: this.hexToUtf8(pgpFingerprint.raw),
+            image: this.hexToUtf8(image.raw),
+            twitter: this.hexToUtf8(twitter.raw)
+        }
+    }
 
     /*
       * @dev helper to convert from hex string bytes to utf8
@@ -76652,10 +76654,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         let amt = 16;
         let api;
         if(isKSM) {
-            api = await ApiPromise.create({ provider: new WsProvider("wss://kusama-rpc.polkadot.io/") });
+            api = await ApiPromise.create({ provider: new WsProvider("wss://kusama.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7") });
             amt = 24;
         } else {
-            api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.elara.patract.io") });
+            api = await ApiPromise.create({ provider: new WsProvider("wss://polkadot.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7") });
         }
         const selector = new ValidatorSelector(api);
         const validators = await selector.getValidators(amt);
