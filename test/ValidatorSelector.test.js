@@ -15,6 +15,7 @@ describe("ValidatorSelector functionality", () => {
         const validators = await this.selector.getValidators(16);
         expect(validators.length).to.equal(16, "should have found 16 validators");
         expect(parseFloat(validators[0].commission) <= 20, "commission should not be higher than 20%");
+        expect(parseFloat(validators[0].commission) > 0.5, "commission should be higher than 0.5%");
         expect(parseFloat(validators[0].deposit) >= (1000 * 1e7), "staking should be at least 1000 * 1e7");
     });
 

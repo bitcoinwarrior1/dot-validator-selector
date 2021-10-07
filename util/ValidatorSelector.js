@@ -3,19 +3,22 @@ const decimals = 1e7;
 class ValidatorSelector {
 
     /*
-    * @param maxCommission - the maximum commission a nominator is willing to accept from a validator, defaults to 20%
-    * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param api - the initialised @polkadot/api instance
+    * @param maxCommission - the maximum commission a nominator is willing to accept from a validator, defaults to 20%
+    * @param minCommission - the minimum commission a nominator is willing to accept from a validator, defaults to 0.5%
+    * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param era - the era to use, defaults to 0 but set to current era in getValidators if not overridden in constructor
     * */
     constructor(
         api,
         maxCommission = 20 * decimals,
+        minCommission = 0.5 * decimals,
         minStaking = 1000 * decimals,
         era = 0
     ) {
         this.api = api;
         this.maxCommission = maxCommission;
+        this.minCommission = minCommission;
         this.minStaking = minStaking;
         this.era = era;
     }
@@ -139,7 +142,7 @@ class ValidatorSelector {
    * */
     async getMeetsCriteria(accountId, staked, commission) {
         if(staked < this.minStaking) return false;
-        if(commission > this.maxCommission) return false;
+        if(commission > this.maxCommission || commission < this.minCommission) return false;
         const overSubscribed = await this.getIsOverSubscribed(accountId);
         if(overSubscribed) return false;
         const hasBeenSlashed = await this.getHasBeenSlashed(accountId);
