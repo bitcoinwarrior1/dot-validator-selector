@@ -76527,7 +76527,7 @@ class ValidatorSelector {
         await this.setEraToCurrentIfZero();
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
-        const validators = await this.api.query.session.validators();
+        const validators = this.shuffleArray((await this.api.query.session.validators()));
         for(const validator of validators) {
             if(validatorsMeetingCriteria.length === amount) {
                 return validatorsMeetingCriteria;
@@ -76573,6 +76573,16 @@ class ValidatorSelector {
             image: this.hexToUtf8(image.raw),
             twitter: this.hexToUtf8(twitter.raw)
         }
+    }
+
+    // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    // used to randomise the validators returned from the node for fairness and dynamism
+    shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
     }
 
     /*
