@@ -76538,15 +76538,17 @@ class ValidatorSelector {
             }
             const identity = await this.api.query.identity.identityOf(validator);
             if(!identity.isEmpty) {
-                const { info, deposit } = JSON.parse(identity);
-                const commission = (await this.api.query.staking.validators(validator)).commission.toNumber();
+                const { info } = JSON.parse(identity);
                 if(validatorDisplays[info.display.raw] !== true) {
-                    const meetsCriteria = await this.getMeetsCriteria(validator, deposit, commission);
+                    const exposure = await this.api.query.staking.erasStakers(this.era, validator);
+                    const ownStake = exposure?.own.toNumber();
+                    const commission = (await this.api.query.staking.validators(validator)).commission.toNumber();
+                    const meetsCriteria = await this.getMeetsCriteria(validator, ownStake, commission);
                     if(meetsCriteria) {
                         validatorsMeetingCriteria.push({
                             accountId: validator.toString(),
                             identity: info,
-                            staked: deposit,
+                            staked: ownStake,
                             commission: commission === 0 ? "0%" : `${commission / decimals}%`
                         });
                         validatorDisplays[info.display.raw] = true;
@@ -76677,7 +76679,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const selector = new ValidatorSelector(api);
         const validators = await selector.getValidators(amt);
         document.getElementById("validators").innerText = validators.map((v, i) => {
-            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${selector.hexToUtf8(v.identity.display.raw.substring(2))}`;
+            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${selector.hexToUtf8(v.identity.display.raw)}`;
         }).join("\n");
         document.getElementById("status").hidden = true;
     });
