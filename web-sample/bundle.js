@@ -76513,11 +76513,12 @@ class ValidatorSelector {
     }
 
     /*
-    * @dev set the era to the current one if not set in constructor to a non zero value
+    * @dev set the era to the current one if set to 0
     * */
     async setEraToCurrentIfZero() {
-        if(this.era !== 0) {
-            this.era = JSON.parse(await this.api.query.staking.activeEra()).index;
+        if(this.era === 0) {
+            const activeEra = await this.api.query.staking.activeEra();
+            this.era = JSON.parse(activeEra).index;
         }
     }
 
@@ -76567,14 +76568,14 @@ class ValidatorSelector {
         const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
 
         return {
-            display: this.hexToUtf8(display.raw),
-            legal: this.hexToUtf8(legal.raw),
-            web: this.hexToUtf8(web.raw),
-            riot: this.hexToUtf8(riot.raw),
-            email: this.hexToUtf8(email.raw),
-            pgpFingerprint: this.hexToUtf8(pgpFingerprint.raw),
-            image: this.hexToUtf8(image.raw),
-            twitter: this.hexToUtf8(twitter.raw)
+            display: this.hexToUtf8(display?.raw),
+            legal: this.hexToUtf8(legal?.raw),
+            web: this.hexToUtf8(web?.raw),
+            riot: this.hexToUtf8(riot?.raw),
+            email: this.hexToUtf8(email?.raw),
+            pgpFingerprint: this.hexToUtf8(pgpFingerprint?.raw),
+            image: this.hexToUtf8(image?.raw),
+            twitter: this.hexToUtf8(twitter?.raw)
         }
     }
 
@@ -76598,6 +76599,7 @@ class ValidatorSelector {
             return decodeURIComponent(
                 s.replace(/\s+/g, '') // remove spaces
                     .replace(/[0-9a-f]{2}/g, '%$&') // add '%' before each 2 characters
+                    .replace("0x", "") // remove 0x prefix
             );
         } catch {
             return "";
