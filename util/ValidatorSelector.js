@@ -21,6 +21,7 @@ class ValidatorSelector {
         this.minCommission = minCommission;
         this.minStaking = minStaking;
         this.era = era;
+        this.maxNominators = 256; // await this.api.consts.staking.maxNominatorRewardedPerValidator;
     }
 
     /*
@@ -52,14 +53,13 @@ class ValidatorSelector {
                 const { info } = JSON.parse(identity);
                 if(validatorDisplays[info.display.raw] !== true) {
                     const exposure = await this.api.query.staking.erasStakers(this.era, validator);
-                    const ownStake = exposure?.own.toNumber();
                     const commission = (await this.api.query.staking.validators(validator)).commission.toNumber();
-                    const meetsCriteria = await this.getMeetsCriteria(validator, ownStake, commission);
+                    const meetsCriteria = await this.getMeetsCriteria(validator, exposure, commission);
                     if(meetsCriteria) {
                         validatorsMeetingCriteria.push({
                             accountId: validator.toString(),
                             identity: info,
-                            staked: ownStake,
+                            staked: exposure?.own.toNumber(),
                             commission: commission === 0 ? "0%" : `${commission / decimals}%`
                         });
                         validatorDisplays[info.display.raw] = true;
@@ -121,34 +121,18 @@ class ValidatorSelector {
     }
 
     /*
-      * @dev check if a validator is oversubscribed
-      * @param accountId - the validators account id
-      * @returns boolean, true if oversubscribed else false
-    * */
-    async getIsOverSubscribed(accountId) {
-        const max = await this.api.consts.staking.maxNominatorRewardedPerValidator;
-        const exposure = await this.api.query.staking.erasStakers(this.era, accountId);
-        if(!exposure.isEmpty) {
-            if(exposure.others.length > max) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    /*
    * @dev check if a validator meets the criteria (except for uniqueness)
    * @param accountId - the validators account id
-   * @param staked - the amount the validator has staked
+   * @param exposure - the validators exposure to staking
    * @param commission - the commission the validator charges to nominators
    * @returns boolean, true if meets criteria else false
    * */
-    async getMeetsCriteria(accountId, staked, commission) {
+    async getMeetsCriteria(accountId, exposure, commission) {
+        const staked = exposure?.own;
+        const nominatorCount = exposure?.others.length;
         if(staked < this.minStaking) return false;
         if(commission > this.maxCommission || commission < this.minCommission) return false;
-        const overSubscribed = await this.getIsOverSubscribed(accountId);
-        if(overSubscribed) return false;
+        if(nominatorCount >= this.maxNominators) return false; // oversubscribed
         const hasBeenSlashed = await this.getHasBeenSlashed(accountId);
 
         return !hasBeenSlashed;
@@ -165,7 +149,7 @@ class ValidatorSelector {
         if(slashes.isEmpty) return false;
 
         return JSON.parse(slashes).lastNonzeroSlash !== 0;
-    };
+    }
 
 }
 

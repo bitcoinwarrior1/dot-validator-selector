@@ -3,7 +3,6 @@ const { ApiPromise, WsProvider} = require("@polkadot/api");
 const ValidatorSelector = require("../util/ValidatorSelector");
 const zugCapital1 = "1zugcaaaDTLhG77kp7PBPpWiaUWTND9oKNcNM94StNStnuw";
 const zugCapital2 = "1zugcaaABVRXtyepKmwNR4g5iH2NtTNVBz1McZ81p91uAm8";
-const hypersphere5 = "13mK8AssyPekT5cFuYQ7ijKNXcjHPq8Gnx6TxF5eFCAwoLQ";
 
 describe("ValidatorSelector functionality", () => {
 
@@ -12,9 +11,8 @@ describe("ValidatorSelector functionality", () => {
         this.selector = new ValidatorSelector(this.api);
     });
 
-    it("should be able to find a validators that meet all the criteria", async () => {
-        const validators = await this.selector.getValidators(16);
-        expect(validators.length).to.equal(16, "should have found 16 validators");
+    it("should be able to find a validator that meets all the criteria", async () => {
+        const validators = await this.selector.getValidators(1);
         expect(parseFloat(validators[0].commission) <= 20, "commission should not be higher than 20%");
         expect(parseFloat(validators[0].commission) > 0.5, "commission should be higher than 0.5%");
         expect(parseFloat(validators[0].deposit) >= (1000 * 1e7), "staking should be at least 1000 * 1e7");
@@ -40,19 +38,7 @@ describe("ValidatorSelector functionality", () => {
             undefined,
             482
         ).getHasBeenSlashed(zugCapital2);
-        expect(beenSlashed).to.equal(false, "this entity has not been slashed");
-    });
-
-    it("hypersphere5 should not meet the criteria in era 497", async() => {
-        const selector = await new ValidatorSelector(this.api, undefined, 0, 0, 497);
-        const meetsCriteria = await selector.getMeetsCriteria(hypersphere5, 0, 0);
-        expect(meetsCriteria).to.equal(false, "hypersphere5 should not meet the criteria in era 497");
-    });
-
-    it("should find oversubscribed", async () => {
-        const selector = await new ValidatorSelector(this.api, undefined, 0, 0, 497);
-        const overSubscribed = await selector.getIsOverSubscribed(hypersphere5);
-        expect(overSubscribed).to.equal(true, "at era 497 hypersphere5 was oversubscribed");
+        expect(beenSlashed).to.equal(false, "this entity has not been slashed as of era 482");
     });
 
     it("should be able to parse the identity object", async() => {
