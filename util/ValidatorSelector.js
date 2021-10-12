@@ -139,6 +139,18 @@ class ValidatorSelector {
     }
 
     /*
+    * @dev check if a validator meets the criteria by account id only, useful for checking a single validator
+    * @param accountId - the validators account id
+    * @returns boolean, true if meets criteria else false
+    * */
+    async getMeetsCriteriaByAccountId(accountId) {
+        const exposure = await this.api.query.staking.erasStakers(this.era, accountId);
+        const commission = (await this.api.query.staking.validators(accountId)).commission.toNumber();
+
+        return this.getMeetsCriteria(accountId, exposure, commission);
+    }
+
+    /*
     * @dev check if a validator has been slashed before
     * @param accountId - the identifier for the validator
     * @param era - the epoch to check for slashing
