@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --exit --recursive --timeout=80000",
+    "updateCache": "node util/cache.js",
     "bundle": "browserify web-sample/index.js -p esmify > web-sample/bundle.js"
   },
   "repository": {

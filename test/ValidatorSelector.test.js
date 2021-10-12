@@ -26,7 +26,7 @@ describe("ValidatorSelector functionality", () => {
             undefined,
             undefined,
             487
-        ).getMeetsCriteria(zugCapital1);
+        ).getMeetsCriteriaByAccountId(zugCapital1);
         expect(meetsCriteria).to.equal(true, "zug capital should meet the criteria in era 482");
     });
 

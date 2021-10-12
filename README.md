@@ -37,6 +37,11 @@ selector.getValidators(n);
 ## See a sample
 If you want to see this module in action, go to [this website](https://james-sangalli.github.io/dot-validator-selector/) you'll have the option to select between the Polkadot and Kusama networks after which 16 validators will be displayed if you selected Polkadot and 24 if you selected Kusama.
 
+## Cached validators
+Since this module can be very slow at selecting validators, I have added a script to get validators meeting the criteria as of the current era at the time and then store them by their era index in the [cache folder](https://github.com/James-Sangalli/dot-validator-selector/tree/gh-pages/cache). These validators can then be retrieved much quicker. 
+
+To update this you can run `npm run updateCache`.
+
 ## Tip
 - KSM: J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb
 - DOT: 16UX9vXqh11QDTuVebLZMPSeFLTJhMifRiuKR4nwSd5fGQJz
