@@ -12,6 +12,7 @@ This program selects validators based on the following criteria:
 - Has an acceptable stake in the pool i.e. skin in the game 
 - Unique entities i.e. this won't select more than 1 of each type e.g. 1 Zug capital but not 10 Zug capital entities 
 - Has never been slashed
+- Elected
 
 Further reading [here](https://wiki.polkadot.network/docs/learn-nominator#filter-out-validators-with-undesirable-traits).
 
