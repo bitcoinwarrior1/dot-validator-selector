@@ -20,6 +20,8 @@ Further reading [here](https://wiki.polkadot.network/docs/learn-nominator#filter
 Install the modules with `npm i` & run the tests with `npm run test`
 
 ## Usage 
+
+### js
 ```js
 // initialise the polkadot api object 
 const { ApiPromise, WsProvider} = require("@polkadot/api");
@@ -33,6 +35,15 @@ selector.getValidators(n);
 
 > [{ "accountId": "1REAJ1k691g5Eqqg9gL7vvZCBG7FCCZ8zgQkZWd4va5ESih", "identity": { "additional": [], "display": { "raw": "0x506f6c6b61646f742e70726f202d205265616c676172" }, "legal": { "none": null }, "web": { "raw": "0x68747470733a2f2f706f6c6b61646f742e70726f" }, "riot": { "raw": "0x407265616c6761723a6d61747269782e6f7267" }, "email": { "raw": "0x68656c6c6f40706f6c6b61646f742e70726f" }, "pgpFingerprint": null, "image": { "none": null }, "twitter": { "raw": "0x4070726f706f6c6b61646f74" } }, "staked": 156300000000, "commission": "1%" }, ...]
 ```
+### via cURL
+Cached snapshots of a particular era can be retrieved via cURL:
+```shell
+$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/ksm/2851.json 
+```
+Example output: 
+
+```> [{"accountId":"F7hDMvu33u14QPXbkBzqF4CuuyyruB2xi6D3V7aUbY8KGpr","identity":{"additional":[],"display":{"raw":"0x53796e6572576f726b20496e63"},"legal":{"none":null},"web":{"none":null},"riot":{"none":null},"email":{"raw":"0x7374616b696e674073796e6572776f726b2e636f6d"},"pgpFingerprint":null,"image":{"none":null},"twitter":{"none":null}},"staked":98500000000000,"commission":"2%"}, ...]```
+
 
 ## See a sample
 If you want to see this module in action, go to [this website](https://james-sangalli.github.io/dot-validator-selector/) you'll have the option to select between the Polkadot and Kusama networks after which 16 validators will be displayed if you selected Polkadot and 24 if you selected Kusama.
