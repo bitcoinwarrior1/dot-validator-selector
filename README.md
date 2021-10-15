@@ -6,13 +6,13 @@ Selecting validators for staking your DOT/KSM is an arduous process and one that
 
 ## Criteria
 This program selects validators based on the following criteria:
-- Identity is verified
-- Commission is acceptable
-- Validator is not oversubscribed 
-- Has an acceptable stake in the pool i.e. skin in the game 
-- Unique entities i.e. this won't select more than 1 of each type e.g. 1 Zug capital but not 10 Zug capital entities 
-- Has never been slashed
-- Elected
+- Their identity is verified 
+- Their commission is within an acceptable range e.g. no less than 0.5% and no greater than 20%
+- The validator is not oversubscribed, allowing you to earn rewards as a nominator
+- The validator has skin in the game, represented by their own stake e.g. they have deposited 1000 DOT of their own capital 
+- Each validator is run by a unique entity e.g. you wouldn't have multiple Zug capital entities, only one at most
+- The validator has never been slashed
+- The validator is currently elected to validate transactions and earn rewards 
 
 Further reading [here](https://wiki.polkadot.network/docs/learn-nominator#filter-out-validators-with-undesirable-traits).
 
