@@ -11,8 +11,8 @@ async function cacheValidators(path, nodeUrl, amount) {
 }
 
 async function main() {
-    await cacheValidators("../cache/dot/", "wss://polkadot.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7", 16);
-    return cacheValidators("../cache/ksm/", "wss://kusama.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7", 24);
+    await cacheValidators("cache/dot/", "wss://polkadot.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7", 16);
+    return cacheValidators("cache/ksm/", "wss://kusama.api.onfinality.io/ws?apikey=09f0165a-7632-408b-ba81-08f964b607f7", 24);
 }
 
 main().then(() => { process.exit(0) }).catch(() => { process.exit(-1) });
