@@ -54,6 +54,7 @@ Since this module can be very slow at selecting validators, I have added a scrip
 To update this you can run `npm run updateCache`.
 
 ## Tip
-- KSM: J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb
-- DOT: 16UX9vXqh11QDTuVebLZMPSeFLTJhMifRiuKR4nwSd5fGQJz
+- KSM: [J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb](https://polkadot.subscan.io/account/J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb)
+- DOT: [16UX9vXqh11QDTuVebLZMPSeFLTJhMifRiuKR4nwSd5fGQJz](https://kusama.subscan.io/account/16UX9vXqh11QDTuVebLZMPSeFLTJhMifRiuKR4nwSd5fGQJz)
 
+Thank you to the treasury for this [tip](https://www.dotreasury.com/ksm/tips/0xf0394919f58a62df369583f23f8b3da6553df93628732fb4d8f8ea22e0582a2e)!
