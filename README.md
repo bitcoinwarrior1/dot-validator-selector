@@ -34,6 +34,11 @@ const selector = new ValidatorSelector(api, MAX_COMMISSION, MIN_STAKING, ERA); /
 selector.getValidators(n);
 
 > [{ "accountId": "1REAJ1k691g5Eqqg9gL7vvZCBG7FCCZ8zgQkZWd4va5ESih", "identity": { "additional": [], "display": { "raw": "0x506f6c6b61646f742e70726f202d205265616c676172" }, "legal": { "none": null }, "web": { "raw": "0x68747470733a2f2f706f6c6b61646f742e70726f" }, "riot": { "raw": "0x407265616c6761723a6d61747269782e6f7267" }, "email": { "raw": "0x68656c6c6f40706f6c6b61646f742e70726f" }, "pgpFingerprint": null, "image": { "none": null }, "twitter": { "raw": "0x4070726f706f6c6b61646f74" } }, "staked": 156300000000, "commission": "1%" }, ...]
+
+// check if a user's validators are meeting the criteria
+selector.getUserValidatorsMeetCriteria(userAccountId);
+
+> [{ "accountId": "13mK8AssyPekT5cFuYQ7ijKNXcjHPq8Gnx6TxF5eFCAwoLQ", "match": false }, ...]
 ```
 ### via cURL
 Cached snapshots of a particular era can be retrieved via cURL:
