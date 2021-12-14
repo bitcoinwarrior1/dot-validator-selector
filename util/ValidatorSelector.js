@@ -151,6 +151,22 @@ class ValidatorSelector {
     }
 
     /*
+    * @dev check if the user's validators meet the criteria set
+    * @param accountId - the validators account id
+    * @returns Object containing the validators address and a boolean representing whether they meet the criteria or not
+    * */
+    async getUserValidatorsMeetCriteria(accountId) {
+        const userSelectedValidators = await this.api.query.staking.nominators(accountId);
+        const targets = JSON.parse(userSelectedValidators).targets;
+        const validators = [];
+        for(let id of targets) {
+            validators.push({ accountId: id, match: await this.getMeetsCriteriaByAccountId(id) });
+        }
+
+        return validators;
+    }
+
+    /*
     * @dev check if a validator has been slashed before
     * @param accountId - the identifier for the validator
     * @param era - the epoch to check for slashing

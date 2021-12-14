@@ -30,6 +30,17 @@ describe("ValidatorSelector functionality", () => {
         expect(meetsCriteria).to.equal(true, "zug capital should meet the criteria in era 482");
     });
 
+    it("should be able to determine whether a users criteria has been met", async() => {
+        const meetsCriteria = await new ValidatorSelector(
+            this.api,
+            undefined,
+            undefined,
+            undefined,
+            559
+        ).getUserValidatorsMeetCriteria("13yHcTycP5tJhfDNvzLBDhLLgTEC9ZuZp3sL8yJNsoWh7Fpd");
+        expect(meetsCriteria.length === 16, "should have checked all 16 validators");
+    });
+
     it("should be able to check if the validator has been slashed before", async() => {
         const beenSlashed = await new ValidatorSelector(
             this.api,
