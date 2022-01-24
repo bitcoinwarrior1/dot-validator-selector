@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const selector = new ValidatorSelector(api);
         const validators = await selector.getValidators(amt);
         document.getElementById("validators").innerText = validators.map((v, i) => {
-            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${selector.hexToUtf8(v.identity.display.raw)}`;
+            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${v.identity.display}`;
         }).join("\n");
         document.getElementById("status").hidden = true;
     });

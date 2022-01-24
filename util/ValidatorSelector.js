@@ -8,13 +8,15 @@ class ValidatorSelector {
     * @param minCommission - the minimum commission a nominator is willing to accept from a validator, defaults to 0.5%
     * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param era - the era to use, defaults to 0 but set to current era in getValidators if not overridden in constructor
+    * @param humanReadable - parse the identity into human readable text else keep it in raw hex
     * */
     constructor(
         api,
         maxCommission = 20 * decimals,
         minCommission = 0.5 * decimals,
         minStaking = 1000 * decimals,
-        era = 0
+        era = 0,
+        humanReadable = true
     ) {
         this.api = api;
         this.maxCommission = maxCommission;
@@ -22,6 +24,7 @@ class ValidatorSelector {
         this.minStaking = minStaking;
         this.era = era;
         this.maxNominators = 256; // await this.api.consts.staking.maxNominatorRewardedPerValidator;
+        this.humanReadable = humanReadable;
     }
 
     /*
@@ -43,7 +46,7 @@ class ValidatorSelector {
         await this.setEraToCurrentIfZero();
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
-        const validators = this.shuffleArray((await this.api.query.session.validators()));
+        const validators = ValidatorSelector.shuffleArray((await this.api.query.session.validators()));
         for(const validator of validators) {
             if(validatorsMeetingCriteria.length === amount) {
                 return validatorsMeetingCriteria;
@@ -58,7 +61,7 @@ class ValidatorSelector {
                     if(meetsCriteria) {
                         validatorsMeetingCriteria.push({
                             accountId: validator.toString(),
-                            identity: info,
+                            identity: this.humanReadable ? ValidatorSelector.convertIdentityToReadableFormat(info) : info,
                             staked: exposure?.own.toNumber(),
                             commission: commission === 0 ? "0%" : `${commission / decimals}%`
                         });
@@ -77,24 +80,24 @@ class ValidatorSelector {
       * @param id - the identity object
       * @returns the parsed identity object from hex string bytes to utf8
     * */
-    convertIdentityToReadableFormat(id) {
+    static convertIdentityToReadableFormat(id) {
         const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
 
         return {
-            display: this.hexToUtf8(display?.raw),
-            legal: this.hexToUtf8(legal?.raw),
-            web: this.hexToUtf8(web?.raw),
-            riot: this.hexToUtf8(riot?.raw),
-            email: this.hexToUtf8(email?.raw),
-            pgpFingerprint: this.hexToUtf8(pgpFingerprint?.raw),
-            image: this.hexToUtf8(image?.raw),
-            twitter: this.hexToUtf8(twitter?.raw)
+            display: ValidatorSelector.hexToUtf8(display?.raw),
+            legal: ValidatorSelector.hexToUtf8(legal?.raw),
+            web: ValidatorSelector.hexToUtf8(web?.raw),
+            riot: ValidatorSelector.hexToUtf8(riot?.raw),
+            email: ValidatorSelector.hexToUtf8(email?.raw),
+            pgpFingerprint: ValidatorSelector.hexToUtf8(pgpFingerprint?.raw),
+            image: ValidatorSelector.hexToUtf8(image?.raw),
+            twitter: ValidatorSelector.hexToUtf8(twitter?.raw)
         }
     }
 
     // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     // used to randomise the validators returned from the node for fairness and dynamism
-    shuffleArray(array) {
+    static shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
@@ -107,7 +110,7 @@ class ValidatorSelector {
       * @param s - hex string of bytes
       * @returns utf8 encoded string
     * */
-    hexToUtf8(s) {
+    static hexToUtf8(s) {
         try {
             return decodeURIComponent(
                 s.replace(/\s+/g, '') // remove spaces

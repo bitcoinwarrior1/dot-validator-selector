@@ -54,7 +54,7 @@ describe("ValidatorSelector functionality", () => {
 
     it("should be able to parse the identity object", async() => {
         const identityObject = {"additional":[],"display":{"raw":"0x506f6c6b61646f742e70726f202d205265616c676172"},"legal":{"none":null},"web":{"raw":"0x68747470733a2f2f706f6c6b61646f742e70726f"},"riot":{"raw":"0x407265616c6761723a6d61747269782e6f7267"},"email":{"raw":"0x68656c6c6f40706f6c6b61646f742e70726f"},"pgpFingerprint":null,"image":{"none":null},"twitter":{"raw":"0x4070726f706f6c6b61646f74"}};
-        const readable = this.selector.convertIdentityToReadableFormat(identityObject);
+        const readable = ValidatorSelector.convertIdentityToReadableFormat(identityObject);
         expect(readable.display).to.equal('Polkadot.pro - Realgar');
         expect(readable.legal).to.equal('');
         expect(readable.web).to.equal('https://polkadot.pro');

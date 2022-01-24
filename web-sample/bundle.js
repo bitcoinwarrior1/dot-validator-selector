@@ -59337,29 +59337,34 @@ utils.intFromLE = intFromLE;
 
 },{"bn.js":714,"minimalistic-assert":755,"minimalistic-crypto-utils":756}],737:[function(require,module,exports){
 module.exports={
-  "_from": "elliptic@^6.5.4",
+  "_args": [
+    [
+      "elliptic@6.5.4",
+      "/Users/jamessangalli/Documents/projects/dot-validator-selector"
+    ]
+  ],
+  "_from": "elliptic@6.5.4",
   "_id": "elliptic@6.5.4",
   "_inBundle": false,
   "_integrity": "sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==",
   "_location": "/elliptic",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "elliptic@^6.5.4",
+    "raw": "elliptic@6.5.4",
     "name": "elliptic",
     "escapedName": "elliptic",
-    "rawSpec": "^6.5.4",
+    "rawSpec": "6.5.4",
     "saveSpec": null,
-    "fetchSpec": "^6.5.4"
+    "fetchSpec": "6.5.4"
   },
   "_requiredBy": [
     "/@polkadot/util-crypto"
   ],
   "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.5.4.tgz",
-  "_shasum": "da37cebd31e79a1367e941b592ed1fbebd58abbb",
-  "_spec": "elliptic@^6.5.4",
-  "_where": "/Users/jamessangalli/Documents/projects/dot-validator-selector/node_modules/@polkadot/util-crypto",
+  "_spec": "6.5.4",
+  "_where": "/Users/jamessangalli/Documents/projects/dot-validator-selector",
   "author": {
     "name": "Fedor Indutny",
     "email": "fedor@indutny.com"
@@ -59367,7 +59372,6 @@ module.exports={
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
-  "bundleDependencies": false,
   "dependencies": {
     "bn.js": "^4.11.9",
     "brorand": "^1.1.0",
@@ -59377,7 +59381,6 @@ module.exports={
     "minimalistic-assert": "^1.0.1",
     "minimalistic-crypto-utils": "^1.0.1"
   },
-  "deprecated": false,
   "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^2.0.2",
@@ -76497,13 +76500,15 @@ class ValidatorSelector {
     * @param minCommission - the minimum commission a nominator is willing to accept from a validator, defaults to 0.5%
     * @param minStaking - the min amount of DOT that the validator must have staked for 'skin in the game', defaults to 1000 DOT
     * @param era - the era to use, defaults to 0 but set to current era in getValidators if not overridden in constructor
+    * @param humanReadable - parse the identity into human readable text else keep it in raw hex
     * */
     constructor(
         api,
         maxCommission = 20 * decimals,
         minCommission = 0.5 * decimals,
         minStaking = 1000 * decimals,
-        era = 0
+        era = 0,
+        humanReadable = true
     ) {
         this.api = api;
         this.maxCommission = maxCommission;
@@ -76511,6 +76516,7 @@ class ValidatorSelector {
         this.minStaking = minStaking;
         this.era = era;
         this.maxNominators = 256; // await this.api.consts.staking.maxNominatorRewardedPerValidator;
+        this.humanReadable = humanReadable;
     }
 
     /*
@@ -76532,7 +76538,7 @@ class ValidatorSelector {
         await this.setEraToCurrentIfZero();
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
-        const validators = this.shuffleArray((await this.api.query.session.validators()));
+        const validators = ValidatorSelector.shuffleArray((await this.api.query.session.validators()));
         for(const validator of validators) {
             if(validatorsMeetingCriteria.length === amount) {
                 return validatorsMeetingCriteria;
@@ -76547,7 +76553,7 @@ class ValidatorSelector {
                     if(meetsCriteria) {
                         validatorsMeetingCriteria.push({
                             accountId: validator.toString(),
-                            identity: info,
+                            identity: this.humanReadable ? ValidatorSelector.convertIdentityToReadableFormat(info) : info,
                             staked: exposure?.own.toNumber(),
                             commission: commission === 0 ? "0%" : `${commission / decimals}%`
                         });
@@ -76566,24 +76572,24 @@ class ValidatorSelector {
       * @param id - the identity object
       * @returns the parsed identity object from hex string bytes to utf8
     * */
-    convertIdentityToReadableFormat(id) {
+    static convertIdentityToReadableFormat(id) {
         const { display, legal, web, riot, email, pgpFingerprint, image, twitter } = id;
 
         return {
-            display: this.hexToUtf8(display?.raw),
-            legal: this.hexToUtf8(legal?.raw),
-            web: this.hexToUtf8(web?.raw),
-            riot: this.hexToUtf8(riot?.raw),
-            email: this.hexToUtf8(email?.raw),
-            pgpFingerprint: this.hexToUtf8(pgpFingerprint?.raw),
-            image: this.hexToUtf8(image?.raw),
-            twitter: this.hexToUtf8(twitter?.raw)
+            display: ValidatorSelector.hexToUtf8(display?.raw),
+            legal: ValidatorSelector.hexToUtf8(legal?.raw),
+            web: ValidatorSelector.hexToUtf8(web?.raw),
+            riot: ValidatorSelector.hexToUtf8(riot?.raw),
+            email: ValidatorSelector.hexToUtf8(email?.raw),
+            pgpFingerprint: ValidatorSelector.hexToUtf8(pgpFingerprint?.raw),
+            image: ValidatorSelector.hexToUtf8(image?.raw),
+            twitter: ValidatorSelector.hexToUtf8(twitter?.raw)
         }
     }
 
     // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     // used to randomise the validators returned from the node for fairness and dynamism
-    shuffleArray(array) {
+    static shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
@@ -76596,7 +76602,7 @@ class ValidatorSelector {
       * @param s - hex string of bytes
       * @returns utf8 encoded string
     * */
-    hexToUtf8(s) {
+    static hexToUtf8(s) {
         try {
             return decodeURIComponent(
                 s.replace(/\s+/g, '') // remove spaces
@@ -76640,6 +76646,22 @@ class ValidatorSelector {
     }
 
     /*
+    * @dev check if the user's validators meet the criteria set
+    * @param accountId - the validators account id
+    * @returns Object containing the validators address and a boolean representing whether they meet the criteria or not
+    * */
+    async getUserValidatorsMeetCriteria(accountId) {
+        const userSelectedValidators = await this.api.query.staking.nominators(accountId);
+        const targets = JSON.parse(userSelectedValidators).targets;
+        const validators = [];
+        for(let id of targets) {
+            validators.push({ accountId: id, match: await this.getMeetsCriteriaByAccountId(id) });
+        }
+
+        return validators;
+    }
+
+    /*
     * @dev check if a validator has been slashed before
     * @param accountId - the identifier for the validator
     * @param era - the epoch to check for slashing
@@ -76675,7 +76697,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const selector = new ValidatorSelector(api);
         const validators = await selector.getValidators(amt);
         document.getElementById("validators").innerText = validators.map((v, i) => {
-            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${selector.hexToUtf8(v.identity.display.raw)}`;
+            return `${++i}. address: ${v.accountId} commission: ${v.commission} name: ${v.identity.display}`;
         }).join("\n");
         document.getElementById("status").hidden = true;
     });
