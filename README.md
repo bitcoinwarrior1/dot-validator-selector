@@ -45,11 +45,27 @@ selector.getUserValidatorsMeetCriteria(userAccountId);
 ### via cURL
 Cached snapshots of a particular era can be retrieved via cURL:
 ```shell
-$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/ksm/2851.json 
+$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/dot/601.json 
 ```
 Example output: 
 
-```> [{"accountId":"F7hDMvu33u14QPXbkBzqF4CuuyyruB2xi6D3V7aUbY8KGpr","identity":{"additional":[],"display":{"raw":"0x53796e6572576f726b20496e63"},"legal":{"none":null},"web":{"none":null},"riot":{"none":null},"email":{"raw":"0x7374616b696e674073796e6572776f726b2e636f6d"},"pgpFingerprint":null,"image":{"none":null},"twitter":{"none":null}},"staked":98500000000000,"commission":"2%"}, ...]```
+```
+[{
+    "accountId": "Cs7UFcNBsBV4Y65GsM3bDzpvinMKFQZyt6x9TrhVhc8ps4E",
+    "identity": {
+        "display": "⛓ NOVY ⛓ ",
+        "legal": "NOVY",
+        "web": "https://stake.novy.pw",
+        "riot": "@novy4:matrix.org",
+        "email": "stake@novy.pw",
+        "pgpFingerprint": "",
+        "image": "",
+        "twitter": "@lost_inchains"
+    },
+    "staked": 91697150371972,
+    "commission": "6%"
+}, ...]
+```
 
 
 ## See a sample
