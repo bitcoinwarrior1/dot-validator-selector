@@ -7,7 +7,7 @@ async function cacheValidators(path, nodeUrl, amount) {
     const selector = new ValidatorSelector(api);
     const validators = await selector.getValidators(amount);
     const era = selector.era;
-    fs.writeFileSync(`${path}${era}.json`, JSON.stringify(validators));
+    fs.writeFileSync(`${path}${era}.json`, JSON.stringify(validators, null, 4));
 }
 
 async function main() {
