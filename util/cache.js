@@ -8,6 +8,11 @@ async function cacheValidators(path, nodeUrl, amount) {
     const validators = await selector.getValidators(amount);
     const era = selector.era;
     fs.writeFileSync(`${path}${era}.json`, JSON.stringify(validators, null, 4));
+    const latest = {
+        validators: validators,
+        era: era
+    };
+    fs.writeFileSync(`web-sample/${path.replace("cache/", "")}latest.json`, JSON.stringify(latest, null, 4));
 }
 
 async function main() {
