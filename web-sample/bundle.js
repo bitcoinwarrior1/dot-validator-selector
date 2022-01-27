@@ -2,64 +2,19 @@
 module.exports={
     "validators": [
         {
-            "accountId": "15fU523Wq5BCt2NWAmrCU6p8nFB29uVifeG7bwYJHbw5Mmd9",
+            "accountId": "1WG3jyNqniQMRZGQUc7QD2kVLT8hkRPGMSqAb5XYQM1UDxN",
             "identity": {
-                "display": "SNZPool-1",
-                "legal": "SNZPool",
-                "web": "https://snzholding.com",
-                "riot": "",
-                "email": "hi@snzholding.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@snzholding"
-            },
-            "staked": 10000000000,
-            "commission": "1%"
-        },
-        {
-            "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
-            "identity": {
-                "display": "CoinFund/Grassfed",
+                "display": "DokiaCapital",
                 "legal": "",
-                "web": "",
-                "riot": "",
+                "web": "https://staking.dokia.cloud",
+                "riot": "@awrelll:matrix.org",
                 "email": "",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@coinfund_io"
+                "twitter": ""
             },
-            "staked": 117522049019618,
+            "staked": 6044401583000000,
             "commission": "5%"
-        },
-        {
-            "accountId": "13dVcF8BjzUpYujj5HxumDLPwpHzMPwzPZAZHJQEbKRJuNgT",
-            "identity": {
-                "display": "T-Systems MMS",
-                "legal": "T-Systems MMS",
-                "web": "",
-                "riot": "",
-                "email": "staking@t-systems-mms.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@TSystems_MMS"
-            },
-            "staked": 10000000000,
-            "commission": "10%"
-        },
-        {
-            "accountId": "16Y3FmTiJ3ZYAUZrf5rZtxrQJzcHsDBdscpu2zgMD2xN6NY7",
-            "identity": {
-                "display": "PDP_Validator",
-                "legal": "",
-                "web": "",
-                "riot": "@paveldp:matrix.org",
-                "email": "pavel.butenko@yahoo.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@PaulBAciD"
-            },
-            "staked": 50023162522122,
-            "commission": "2.9%"
         },
         {
             "accountId": "1653t723BHhC2krGCFKUUNDQb5sUafy5pZvKVwnwo1oMAMi7",
@@ -77,34 +32,109 @@ module.exports={
             "commission": "10%"
         },
         {
-            "accountId": "16GDRhRYxk42paoK6TfHAqWej8PdDDUwdDazjv4bAn4KGNeb",
+            "accountId": "13dVcF8BjzUpYujj5HxumDLPwpHzMPwzPZAZHJQEbKRJuNgT",
             "identity": {
-                "display": "CP287-CLOUDWALK",
-                "legal": "",
-                "web": "https://cp0x.com",
-                "riot": "@illlefr4u:matrix.org",
-                "email": "illlefr4u@gmail.com",
+                "display": "T-Systems MMS",
+                "legal": "T-Systems MMS",
+                "web": "",
+                "riot": "",
+                "email": "staking@t-systems-mms.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@kaplansky1"
+                "twitter": "@TSystems_MMS"
             },
-            "staked": 1050050983172621,
-            "commission": "3%"
+            "staked": 10000000000,
+            "commission": "10%"
         },
         {
-            "accountId": "1WG3jyNqniQMRZGQUc7QD2kVLT8hkRPGMSqAb5XYQM1UDxN",
+            "accountId": "14ShUZUYUR35RBZW6uVVt1zXDxmSQddkeDdXf1JkMA6P721N",
             "identity": {
-                "display": "DokiaCapital",
-                "legal": "",
-                "web": "https://staking.dokia.cloud",
-                "riot": "@awrelll:matrix.org",
-                "email": "",
+                "display": "Wei",
+                "legal": "Wei Tang",
+                "web": "https://that.world/~wei/",
+                "riot": "@wei:that.world",
+                "email": "wei@that.world",
                 "pgpFingerprint": "",
                 "image": "",
                 "twitter": ""
             },
-            "staked": 6044401583000000,
-            "commission": "5%"
+            "staked": 554005388214145,
+            "commission": "3%"
+        },
+        {
+            "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
+            "identity": {
+                "display": "RockX_Polkadot",
+                "legal": "RockX",
+                "web": "https://www.rockx.com",
+                "riot": "",
+                "email": "support@rockx.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@rockx_official"
+            },
+            "staked": 22157724174367,
+            "commission": "10%"
+        },
+        {
+            "accountId": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+            "identity": {
+                "display": "SAXEMBERG",
+                "legal": "",
+                "web": "https://saxemberg.com/",
+                "riot": "@s_saxemberg:matrix.org",
+                "email": "hello@saxemberg.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@saxemberg"
+            },
+            "staked": 156311630916354,
+            "commission": "1.99%"
+        },
+        {
+            "accountId": "16iiKwFsRKRsjAiEpD4zgNgEX84nzHtHHNFKXhz1sHtan3ne",
+            "identity": {
+                "display": "CryptoLab 01",
+                "legal": "",
+                "web": "",
+                "riot": "@yaohsin:matrix.org",
+                "email": "yaohsin@protonmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 54178639316036,
+            "commission": "3%"
+        },
+        {
+            "accountId": "16Y3FmTiJ3ZYAUZrf5rZtxrQJzcHsDBdscpu2zgMD2xN6NY7",
+            "identity": {
+                "display": "PDP_Validator",
+                "legal": "",
+                "web": "",
+                "riot": "@paveldp:matrix.org",
+                "email": "pavel.butenko@yahoo.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@PaulBAciD"
+            },
+            "staked": 50403183693515,
+            "commission": "2.9%"
+        },
+        {
+            "accountId": "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN",
+            "identity": {
+                "display": "Nodeasy",
+                "legal": "",
+                "web": "",
+                "riot": "@crabbean:matrix.org",
+                "email": "wenzhihao@bitopia.cn",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@Nodeasy"
+            },
+            "staked": 100554435841602,
+            "commission": "3%"
         },
         {
             "accountId": "13bEAraR65YASSynHhGNrsEyPgWfcLLYdgYV6GmeB6bbUeeg",
@@ -122,112 +152,67 @@ module.exports={
             "commission": "8%"
         },
         {
-            "accountId": "12713bbq45c66CN9AD7yusSXWE1kY91DcMpjVcB2rXqZKy2w",
+            "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
             "identity": {
-                "display": "🔒stateless_money🔒",
+                "display": "CoinFund/Grassfed",
                 "legal": "",
-                "web": "https://www.stateless.money/",
-                "riot": "@aaronschwarz:matrix.org",
-                "email": "Aaron.Antonopoulos@pm.me",
+                "web": "",
+                "riot": "",
+                "email": "",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@MoneyStateless"
+                "twitter": "@coinfund_io"
             },
-            "staked": 2567306085408,
+            "staked": 122119059984837,
             "commission": "5%"
         },
         {
-            "accountId": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+            "accountId": "14tcxHSTAiZf7M4vcLfFdGkGJFjfx6zDqds5QVyz2H24hKgG",
             "identity": {
-                "display": "SAXEMBERG",
-                "legal": "",
-                "web": "https://saxemberg.com/",
-                "riot": "@s_saxemberg:matrix.org",
-                "email": "hello@saxemberg.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@saxemberg"
-            },
-            "staked": 155856662006574,
-            "commission": "1.99%"
-        },
-        {
-            "accountId": "16g43B7VPfTmpXQujSz3aKbqY9twSrDreHFWtwp4P7bLkQPp",
-            "identity": {
-                "display": "Staking4All 🥩",
-                "legal": "",
-                "web": "https://www.staking4all.org/",
-                "riot": "@staking4all:matrix.org",
-                "email": "staking4all@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@staking4all"
-            },
-            "staked": 54271672141568,
-            "commission": "1%"
-        },
-        {
-            "accountId": "14QBQABMSFBsT3pDTaEQdshq7ZLmhzKiae2weZH45pw5ErYu",
-            "identity": {
-                "display": "P2P.ORG",
-                "legal": "P2P.ORG",
-                "web": "https://p2p.org",
-                "riot": "@glebp:matrix.org",
-                "email": "am@p2p.org",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@P2Pvalidator"
-            },
-            "staked": 220000484038,
-            "commission": "0.5%"
-        },
-        {
-            "accountId": "1cFsLn7o74nmjbRyDtMAnMpQMc5ZLsjgCSz9Np2mcejUK83",
-            "identity": {
-                "display": "Uno Staking",
+                "display": "Mile",
                 "legal": "",
                 "web": "",
-                "riot": "@unostaking:matrix.org",
-                "email": "operator@unostaking.com",
+                "riot": "@matherceg:matrix.org",
+                "email": "mherceg@protonmail.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@UnoStaking"
+                "twitter": ""
             },
-            "staked": 105752170228685,
+            "staked": 99932210660966,
             "commission": "3%"
         },
         {
-            "accountId": "12dvyqCFhVubTDqMdojyjhkxVUMaYVXWLv8uZW1NomUunPmN",
+            "accountId": "16SSTPeD2UW3hhnuRBS6HjpxhzRFBrRf2Wupxf1iJgMkhBSD",
             "identity": {
-                "display": "Nodeasy",
+                "display": "CHAINFLOW",
                 "legal": "",
                 "web": "",
-                "riot": "@crabbean:matrix.org",
-                "email": "wenzhihao@bitopia.cn",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@Nodeasy"
-            },
-            "staked": 100057440098007,
-            "commission": "3%"
-        },
-        {
-            "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
-            "identity": {
-                "display": "RockX_Polkadot",
-                "legal": "RockX",
-                "web": "https://www.rockx.com",
                 "riot": "",
-                "email": "support@rockx.com",
+                "email": "hello@chainflow.io",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@rockx_official"
+                "twitter": "@chainflowpos"
             },
-            "staked": 20526701809249,
-            "commission": "10%"
+            "staked": 59065925207850,
+            "commission": "3%"
+        },
+        {
+            "accountId": "129LBt5T1eYtnGHbPYeiiMdmWfokCiiq7z6JBfjnYifiombz",
+            "identity": {
+                "display": "Pioneer",
+                "legal": "",
+                "web": "",
+                "riot": "@sachik0:matrix.org",
+                "email": "pioneer.validator@gmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 70000863678033,
+            "commission": "3%"
         }
     ],
-    "era": 602
+    "era": 604
 }
 },{}],2:[function(require,module,exports){
 const latestKsm = require("./ksm/latest.json");
@@ -255,259 +240,64 @@ document.addEventListener("DOMContentLoaded", async () => {
 module.exports={
     "validators": [
         {
-            "accountId": "G7xzXN3ddsqcsPswNKRhroyptEsh1oakjQ98K7fRZUTUvkr",
+            "accountId": "EkdTsXR71pJwHjyaevqL33eXoxCvfaFKBfvKy63ydzC57rV",
             "identity": {
-                "display": "Jormungand Labs🐍",
+                "display": "LatentHero",
                 "legal": "",
                 "web": "",
                 "riot": "",
-                "email": "",
+                "email": "latenthero@protonmail.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@JormungandLabs"
+                "twitter": ""
             },
-            "staked": 50000000000000,
-            "commission": "3%"
+            "staked": 73000000000000,
+            "commission": "10%"
         },
         {
-            "accountId": "Cd2ewfXdQiaUzTBYKSZTzL7hPuB3nzEKMT2y36zJC9QaEG4",
+            "accountId": "JH7Vy4p3BWUe2VqKQsHiUjWvj5VuF8daqqN25L2oGT6kwt4",
             "identity": {
-                "display": "Fennel Labs",
-                "legal": "Fennel Labs LLC",
-                "web": "https://fennellabs.com",
-                "riot": "@romulus10:fennel.ems.host",
-                "email": "info@fennellabs.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@FennelLabs"
-            },
-            "staked": 64000786238139,
-            "commission": "5%"
-        },
-        {
-            "accountId": "EMrTktHLYSHAqpVH3f2KMMoLkZPMWjeQAZLpZTJ6KgNcXVr",
-            "identity": {
-                "display": "taichung",
+                "display": "INSIGHT",
                 "legal": "",
                 "web": "",
-                "riot": "@taichung:matrix.org",
+                "riot": "@shinyfoil:matrix.org",
                 "email": "",
                 "pgpFingerprint": "",
                 "image": "",
                 "twitter": ""
             },
-            "staked": 51000000000000,
+            "staked": 83057996586488,
             "commission": "10%"
         },
         {
-            "accountId": "DQbaf6a3rUfv5otfmkhDBpQw2L3wTa2uxskfkYdMfwU2aZP",
+            "accountId": "CdBvPtpTyspp6JfxBEAnxBLRL27cNrNSMERMD3jd4mQvziZ",
             "identity": {
-                "display": "RockX_Kusama5",
-                "legal": "RockX",
-                "web": "https://rockx.com",
+                "display": "oktanodes kusama 1",
+                "legal": "",
+                "web": "",
                 "riot": "",
-                "email": "support@rockx.com",
+                "email": "admin@shadownodes.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@rockx_official"
+                "twitter": "@oktanodes"
             },
-            "staked": 7302081253293,
-            "commission": "10%"
+            "staked": 50504700000000,
+            "commission": "7%"
         },
         {
-            "accountId": "EyTegKZ9DBvMkV6pMbjx2fRk3N2VLNNduuto1PGpYcEqRrX",
+            "accountId": "CczSz9z41uHpftVviWz91TgjLe3SmbvXfbAc958cjy7F6Qs",
             "identity": {
-                "display": "andreita-validator-0",
+                "display": "Nodeasy",
                 "legal": "",
                 "web": "",
-                "riot": "@andreita:matrix.org",
-                "email": "andreaf.speziale@gmail.com",
+                "riot": "@crabbean:matrix.org",
+                "email": "wenzhihao@bitopia.cn",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@andreafspeziale"
+                "twitter": "@Nodeasy"
             },
-            "staked": 112927170066594,
-            "commission": "10%"
-        },
-        {
-            "accountId": "DJN9riW92EEyZFHNthLCRmc8BrC3MDGiiVKCpHX8qcizcmV",
-            "identity": {
-                "display": "lux8.net",
-                "legal": "",
-                "web": "",
-                "riot": "@ama31337:matrix.org",
-                "email": "info@lux8.net",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@lux8net"
-            },
-            "staked": 72207453148335,
+            "staked": 50100000000000,
             "commission": "1%"
-        },
-        {
-            "accountId": "GZKWWW7jXFUTKDZRz9mkGAdsCKyGJbjMedESAF73jyLPajb",
-            "identity": {
-                "display": "Mr.Hash",
-                "legal": "",
-                "web": "",
-                "riot": "@mr_hash:matrix.org",
-                "email": "paconemel1979@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 51000000000000,
-            "commission": "10%"
-        },
-        {
-            "accountId": "EVgkDV9X4BmnMi3ZNgrkKW3WEiaZ6wqE1HVRZziNnERmyfi",
-            "identity": {
-                "display": "Berezka",
-                "legal": "",
-                "web": "",
-                "riot": "@tiktak34:matrix.org",
-                "email": "ikazakovnn@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@criptocthulhu"
-            },
-            "staked": 40000079170415,
-            "commission": "10%"
-        },
-        {
-            "accountId": "DaNCiojAyKWjXDLxiHLrpMvD36hgKpvrYD3Xqf31RNDqXKT",
-            "identity": {
-                "display": "Ancibanci",
-                "legal": "",
-                "web": "",
-                "riot": "@ancibanci:matrix.org",
-                "email": "ancibanci0@protonmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 43673408828193,
-            "commission": "10%"
-        },
-        {
-            "accountId": "Ffd5sG7N65LEFr4bXbpwvPnpmezwpfrCVDEozH2jkMs1utk",
-            "identity": {
-                "display": "CRYPTO DOGE",
-                "legal": "",
-                "web": "",
-                "riot": "@bogdi:matrix.org",
-                "email": "info@cryptonic.network",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 50150000000000,
-            "commission": "10%"
-        },
-        {
-            "accountId": "H1bSKJxoxzxYRCdGQutVqFGeW7xU3AcN6vyEdZBU7Qb1rsZ",
-            "identity": {
-                "display": "KSMNETWORK",
-                "legal": "",
-                "web": "",
-                "riot": "@gtoocool:matrix.org",
-                "email": "w3f@ksm.network",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 10200078122339,
-            "commission": "10%"
-        },
-        {
-            "accountId": "JKbJoCsgUEgjbGmGq7VdSNgSVQt8k43e3WWAYGCpiNP9r6D",
-            "identity": {
-                "display": "Good Karma",
-                "legal": "",
-                "web": "",
-                "riot": "@themarcus:matrix.org",
-                "email": "matthew.marcus@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@TheMarcus"
-            },
-            "staked": 50000018888061,
-            "commission": "10%"
-        },
-        {
-            "accountId": "EAhgtgo4qb6tbh3VwrPEgxne9qkwiqg5SzNHTmbqyoVyHk5",
-            "identity": {
-                "display": "Melange",
-                "legal": "",
-                "web": "",
-                "riot": "@palace:tzchat.org",
-                "email": "melange.staking@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": "@omglol247"
-            },
-            "staked": 73185053335072,
-            "commission": "10%"
-        },
-        {
-            "accountId": "GPTwmqixpfnum8jCBVmYBYnseb8q6g9b4kxWRRuuRTAqMoX",
-            "identity": {
-                "display": "Infinity",
-                "legal": "",
-                "web": "",
-                "riot": "@zeb09:matrix.org",
-                "email": "zeb09@yandex.ru",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 10561887459435,
-            "commission": "10%"
-        },
-        {
-            "accountId": "GkS2m7UK6RSUkFiCHYPRtp8GCKdPtrBwP1wj7448gWoiut8",
-            "identity": {
-                "display": "Michael Stephan",
-                "legal": "",
-                "web": "",
-                "riot": "@michaelstephan:matrix.org",
-                "email": "Michael.Stephan1967@gmx.de",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 75771943631797,
-            "commission": "10%"
-        },
-        {
-            "accountId": "D2r9AudNkHHpKfGtS5rpVHkchBoBhRsR6TmNcTuU4yiTp6w",
-            "identity": {
-                "display": "🏢 Ministry Of Blocks 🏢",
-                "legal": "",
-                "web": "",
-                "riot": "",
-                "email": "x@ministryofblocks.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 53319207179116,
-            "commission": "10%"
-        },
-        {
-            "accountId": "EwxPgctMzko7q2zQSLv4WnXzHBRfXx4twmm4X4bnEMZmW1M",
-            "identity": {
-                "display": "Compute Crypto",
-                "legal": "",
-                "web": "https://computecrypto.com",
-                "riot": "",
-                "email": "computecrypto@gmail.com",
-                "pgpFingerprint": "",
-                "image": "",
-                "twitter": ""
-            },
-            "staked": 52793162810596,
-            "commission": "10%"
         },
         {
             "accountId": "GUukavjKxAdj4Cb77DiwyNNhCSZ6H4RaSiRqYo1uaYiSWcM",
@@ -521,67 +311,67 @@ module.exports={
                 "image": "",
                 "twitter": "@SultanOfStaking"
             },
-            "staked": 59047937387242,
+            "staked": 59325980449437,
             "commission": "10%"
         },
         {
-            "accountId": "HTyzs9XAxUpHpNe7Kwhp3M5kCJuxFm4AYRCpYjcHdhiVDFE",
+            "accountId": "JHwBvr7JeNXW8S8JL7wumsvqYZ8Kf2W1xrYn5nS1Z8p81VL",
             "identity": {
-                "display": "Tesla",
+                "display": "XUAN_2",
                 "legal": "",
                 "web": "",
-                "riot": "",
-                "email": "tesla.validation@gmail.com",
+                "riot": "@xuan93:matrix.org",
+                "email": "yangjingxuanmail@gmail.com",
                 "pgpFingerprint": "",
                 "image": "",
                 "twitter": ""
             },
-            "staked": 11000000000000,
+            "staked": 52200000000000,
             "commission": "10%"
         },
         {
-            "accountId": "DMNWV5U4GHvc28LNbYzckpPqihSqSu6C4WnKQWgSXbZqwJy",
+            "accountId": "GCMGu8sjEuEZuMZavo5PLvAhr8fJXAty76jDV1YPquG9erp",
             "identity": {
-                "display": "CS_Axial",
+                "display": "CoinStudio",
                 "legal": "",
-                "web": "http://cryptosapiens.club/",
-                "riot": "@lilialul:matrix.org",
-                "email": "f4tatiana@yandex.ru",
+                "web": "",
+                "riot": "",
+                "email": "coinstudio@protonmail.com",
                 "pgpFingerprint": "",
                 "image": "",
                 "twitter": ""
             },
-            "staked": 52692669814328,
+            "staked": 50030000000000,
             "commission": "10%"
         },
         {
-            "accountId": "E62PfJNuJpyKqTy3JU8D6LiuKagafiJJ9sLJsJHQShPVa4R",
+            "accountId": "Gve4JFfF5YkZJNwKTbRVTQCkLXJJhzjJszJjxPvHLb9fho5",
             "identity": {
-                "display": "ondin3",
+                "display": "BRAVEBAT",
                 "legal": "",
-                "web": "",
-                "riot": "",
-                "email": "ondin777@gmail.com",
+                "web": "https://bravebat.info",
+                "riot": "@bravebat:matrix.org",
+                "email": "bravebatinfo@gmail.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": ""
+                "twitter": "@BraveBatInfo"
             },
-            "staked": 4998000000000,
-            "commission": "20%"
+            "staked": 97532080345068,
+            "commission": "10%"
         },
         {
-            "accountId": "GoF8Dm7hrdE6Dec21ymD2P5M9bHWPU3Xwb5NipGqnsuJg4v",
+            "accountId": "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL",
             "identity": {
-                "display": "maxxrer",
+                "display": "bLd Nodes | ValidatorAlliance",
                 "legal": "",
-                "web": "",
-                "riot": "",
-                "email": "maxxrerk@gmail.com",
+                "web": "https://medium.com/bld-nodes",
+                "riot": "@bld759:matrix.org",
+                "email": "bldnodes@gmail.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": ""
+                "twitter": "@bLdNodes"
             },
-            "staked": 50000000000000,
+            "staked": 53045330076938,
             "commission": "10%"
         },
         {
@@ -596,25 +386,220 @@ module.exports={
                 "image": "",
                 "twitter": ""
             },
-            "staked": 54285559150257,
+            "staked": 55025064246967,
             "commission": "10%"
         },
         {
-            "accountId": "Ew4JDQENKYKdBkgW6bJfFqYYXaDw4kupXBrXyMcJoU6Lc9Z",
+            "accountId": "FeuqakbGhvLMwvpqxocPounn7xbLR1xJN4U6fK1ibeJbuh8",
             "identity": {
-                "display": "Amiga Staking",
-                "legal": "",
-                "web": "",
-                "riot": "@amigastaking:matrix.org",
-                "email": "operator@amigastaking.com",
+                "display": "STAKINGDX_COM",
+                "legal": "STAKINGDX_COM",
+                "web": "https://stakingdx.com",
+                "riot": "@stakingdx:matrix.org",
+                "email": "info@stakingdx.com",
                 "pgpFingerprint": "",
                 "image": "",
-                "twitter": "@AmigaStaking"
+                "twitter": "@StakingDx"
             },
-            "staked": 98045671561634,
+            "staked": 12609775703864,
+            "commission": "8%"
+        },
+        {
+            "accountId": "ES61whRwU1AgXx7zbq9KxK2SiuWtiLWbXKowsqLraa8WC9A",
+            "identity": {
+                "display": "DOT_KSM_STK",
+                "legal": "",
+                "web": "",
+                "riot": "@dotksmstk:matrix.org",
+                "email": "dotksmstk@gmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@DotKsmStk"
+            },
+            "staked": 12325027743845,
             "commission": "10%"
+        },
+        {
+            "accountId": "Cdhjt72TSezVDkUzdgyoSwXByfwQJjuXSYcDs5L8snyB8Yx",
+            "identity": {
+                "display": "ilgio",
+                "legal": "",
+                "web": "https://poolgio.com",
+                "riot": "@ilgio:matrix.org",
+                "email": "ilgio@poolgio.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 52757371776554,
+            "commission": "10%"
+        },
+        {
+            "accountId": "FRnhmEiJviMz6dHpFKyniEQCpXqkArixA28TUb9RSPtjQ95",
+            "identity": {
+                "display": "Stake Fort",
+                "legal": "",
+                "web": "",
+                "riot": "@gpathela:matrix.org",
+                "email": "gourav@stakefort.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 57664237153225,
+            "commission": "10%"
+        },
+        {
+            "accountId": "Dmkww4FsXG3gjCTdpuyAXxfKWtXfYcxV1VJfy7JyPxvjUPA",
+            "identity": {
+                "display": "Phoenix",
+                "legal": "",
+                "web": "",
+                "riot": "",
+                "email": "takeanywhere45@gmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 10815101309963,
+            "commission": "10%"
+        },
+        {
+            "accountId": "DSxkxjpikokutVG1ToPQBA9KD1bUJp5TRy2puVubvbX6UTQ",
+            "identity": {
+                "display": "EXNESS.COM",
+                "legal": "",
+                "web": "",
+                "riot": "@exness:matrix.org",
+                "email": "validator@exness.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 900637380941572,
+            "commission": "2%"
+        },
+        {
+            "accountId": "GPTwmqixpfnum8jCBVmYBYnseb8q6g9b4kxWRRuuRTAqMoX",
+            "identity": {
+                "display": "Infinity",
+                "legal": "",
+                "web": "",
+                "riot": "@zeb09:matrix.org",
+                "email": "zeb09@yandex.ru",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 11110416899073,
+            "commission": "10%"
+        },
+        {
+            "accountId": "GLdbdQ1E5kM73RN6d8Z1SW7auyneEpp99rxp49ziDaz535B",
+            "identity": {
+                "display": "MC",
+                "legal": "Mark Crince",
+                "web": "",
+                "riot": "",
+                "email": "markcrince@gmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 96477356775642,
+            "commission": "10%"
+        },
+        {
+            "accountId": "EctdZvgkphLJMQmKntaPP74LKpGvDKaj1cbqC8fUT4HzqiC",
+            "identity": {
+                "display": "Pressburg Labs",
+                "legal": "",
+                "web": "https://pressburglabs.com",
+                "riot": "",
+                "email": "pressburglabs@protonmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@PressburgLabs"
+            },
+            "staked": 10416483278428,
+            "commission": "10%"
+        },
+        {
+            "accountId": "GCNeCFUCEjcJ8XQxJe1QuExpS61MavucrnEAVpcngWBYsP2",
+            "identity": {
+                "display": "Taiwan 001",
+                "legal": "",
+                "web": "",
+                "riot": "@yaohsin:matrix.org",
+                "email": "",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 51106398181125,
+            "commission": "10%"
+        },
+        {
+            "accountId": "FiNuPk2iPirbKC7Spse3NuE9rWjzaQonZmk6wRvk1LcEU13",
+            "identity": {
+                "display": "GoldenEye",
+                "legal": "",
+                "web": "",
+                "riot": "@goldeneye1:matrix.org",
+                "email": "polkadot@jn11.xyz",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 100024128503,
+            "commission": "20%"
+        },
+        {
+            "accountId": "J4GLk8QZktKt7wBN2KHzgkexPXHsVjAr2VHRXeSuPjLvPsi",
+            "identity": {
+                "display": "DotScanner.com",
+                "legal": "DotScanner.com",
+                "web": "https://dotscanner.com",
+                "riot": "",
+                "email": "admin@dotscanner.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": "@TheDotScanner"
+            },
+            "staked": 70000000000000,
+            "commission": "3%"
+        },
+        {
+            "accountId": "HMaTJbeYonb2SoT7ek1sjrtkkKaor7j3yy2VUbj6FDokPXr",
+            "identity": {
+                "display": "Mile",
+                "legal": "",
+                "web": "",
+                "riot": "@matherceg:matrix.org",
+                "email": "mherceg@protonmail.com",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 55404427682445,
+            "commission": "10%"
+        },
+        {
+            "accountId": "F7Wa1su7NRSr6LWuhPWdXcQALDyzm8Vmev7WtV5jVPtJELs",
+            "identity": {
+                "display": "ANAMIX",
+                "legal": "ANAMIX",
+                "web": "https://anamix.top/",
+                "riot": "@dbpatty:matrix.org",
+                "email": "anamix@polkadot.pro",
+                "pgpFingerprint": "",
+                "image": "",
+                "twitter": ""
+            },
+            "staked": 900665650031888,
+            "commission": "5%"
         }
     ],
-    "era": 3271
+    "era": 3281
 }
 },{}]},{},[2]);
