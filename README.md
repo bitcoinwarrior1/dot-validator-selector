@@ -47,6 +47,11 @@ Cached snapshots of a particular era can be retrieved via cURL:
 ```shell
 $ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/dot/601.json 
 ```
+Or get a cached snapshot of the latest era in the repo:
+```shell
+$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/web-sample/dot/latest.json
+```
+
 Example output: 
 
 ```
