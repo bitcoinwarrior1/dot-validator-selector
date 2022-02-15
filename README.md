@@ -45,7 +45,7 @@ selector.getUserValidatorsMeetCriteria(userAccountId);
 ### via cURL
 Cached snapshots of a particular era can be retrieved via cURL:
 ```shell
-$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/dot/601.json 
+$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/dot/623.json 
 ```
 Or get a cached snapshot of the latest era in the repo:
 ```shell

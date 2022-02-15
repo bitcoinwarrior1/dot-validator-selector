@@ -1,4 +1,4 @@
-const decimals = 1e7;
+const commissionDecimals = 1e7;
 
 class ValidatorSelector {
 
@@ -12,16 +12,16 @@ class ValidatorSelector {
     * */
     constructor(
         api,
-        maxCommission = 20 * decimals,
-        minCommission = 0.5 * decimals,
-        minStaking = 1000 * decimals,
+        maxCommission = 20 * commissionDecimals,
+        minCommission = 0.5 * commissionDecimals,
+        minStaking = 1000,
         era = 0,
         humanReadable = true
     ) {
         this.api = api;
         this.maxCommission = maxCommission;
         this.minCommission = minCommission;
-        this.minStaking = minStaking;
+        this.minStaking = minStaking * `1e+${api.registry.chainDecimals[0]}`;
         this.era = era;
         this.maxNominators = 256; // await this.api.consts.staking.maxNominatorRewardedPerValidator;
         this.humanReadable = humanReadable;
@@ -63,7 +63,7 @@ class ValidatorSelector {
                             accountId: validator.toString(),
                             identity: this.humanReadable ? ValidatorSelector.convertIdentityToReadableFormat(info) : info,
                             staked: exposure?.own.toNumber(),
-                            commission: commission === 0 ? "0%" : `${commission / decimals}%`
+                            commission: commission === 0 ? "0%" : `${commission / commissionDecimals}%`
                         });
                         validatorDisplays[info.display.raw] = true;
                     }
