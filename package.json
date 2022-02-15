@@ -1,6 +1,6 @@
 {
   "name": "dot-validator-selector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get the best staking validators programmatically ",
   "main": "index.js",
   "scripts": {
