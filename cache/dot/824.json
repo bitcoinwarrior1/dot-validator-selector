@@ -1,0 +1,212 @@
+[
+    {
+        "accountId": "13pYWKctR5s8vQuyZt3pxQXue4SRH9coyAS9S9z5HtogAnhs",
+        "identity": {
+            "display": "openbitlab",
+            "legal": "",
+            "web": "",
+            "riot": "@openbitlab_:matrix.org",
+            "email": "davide.openbitlab@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@OpenBitLab"
+        },
+        "staked": 53207536530470,
+        "commission": "5%"
+    },
+    {
+        "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
+        "identity": {
+            "display": "RockX_Polkadot",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 216352404255927,
+        "commission": "10%"
+    },
+    {
+        "accountId": "1x9GAG2hXoMt3i7jL7vTZLpdhNGyjffgQUwe8GU9HhhH62e",
+        "identity": {
+            "display": "9Stake by 9GAG",
+            "legal": "",
+            "web": "",
+            "riot": "@9stake.9gag:matrix.org",
+            "email": "9stake.polkadot@9gag.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 59369826187029,
+        "commission": "3%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 195460108200734,
+        "commission": "5%"
+    },
+    {
+        "accountId": "12pJGRmrWoZohZVFnGK2hhoMwzCVkjmEjwv3C5wxdnbCAiEk",
+        "identity": {
+            "display": "Watermelon",
+            "legal": "",
+            "web": "",
+            "riot": "@watermelonnode:matrix.org",
+            "email": "watermelon.node@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@WatermelonNode"
+        },
+        "staked": 50685420218794,
+        "commission": "5%"
+    },
+    {
+        "accountId": "16Jh21ThTh2tW98NuN2gM7Q3KaYiuJLbxCNbuBkFpwcDkRqx",
+        "identity": {
+            "display": "Cypher Labs",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "cypherlabs.contact@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50480007569873,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13Hp4FEF7z7famvakw8cgioHqDxcnhnyQkvd1jF4dxn7cayG",
+        "identity": {
+            "display": "VISIONSTAKE 👁‍🗨",
+            "legal": "",
+            "web": "",
+            "riot": "@visionstake:matrix.org",
+            "email": "info@visionstake.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@visionstake"
+        },
+        "staked": 54768126344213,
+        "commission": "5%"
+    },
+    {
+        "accountId": "1UQC7Vs4zbywp8CbxcCCRUyyRqeUZxq9aXeD8UZ3MpLUy12",
+        "identity": {
+            "display": "Gontajones",
+            "legal": "",
+            "web": "",
+            "riot": "@gontajones:matrix.org",
+            "email": "arturgontijo@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@arturgontijo"
+        },
+        "staked": 50346923381169,
+        "commission": "3%"
+    },
+    {
+        "accountId": "16SDUqoRr6f8DAyKhYWvo9dwFPdJHeFXFr1may1vhomqqPTQ",
+        "identity": {
+            "display": "hsinchu",
+            "legal": "",
+            "web": "",
+            "riot": "@hsinchu:matrix.org",
+            "email": "iielite.lee@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 56097562503133,
+        "commission": "5%"
+    },
+    {
+        "accountId": "16SSTPeD2UW3hhnuRBS6HjpxhzRFBrRf2Wupxf1iJgMkhBSD",
+        "identity": {
+            "display": "NOVY",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "stake@novy.pw",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@lost_inchains"
+        },
+        "staked": 59476591735383,
+        "commission": "4%"
+    },
+    {
+        "accountId": "16HvKyV9B61hsop3ZY6pWYeV537S29kd9pb9FMrPzx49ym5X",
+        "identity": {
+            "display": "TheGuild",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "theguildsource@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 53516134626625,
+        "commission": "3%"
+    },
+    {
+        "accountId": "14N5GT7YTaDBSsLpfxxtCxNdYfgDofGj5wQSfqC1URKHdT8C",
+        "identity": {
+            "display": "RockX_Polkadot3",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 96341742197175,
+        "commission": "3%"
+    },
+    {
+        "accountId": "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1",
+        "identity": {
+            "display": "RADIUMBLOCK.COM",
+            "legal": "",
+            "web": "https://radiumblock.com",
+            "riot": "",
+            "email": "info@radiumblock.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@radiumblock"
+        },
+        "staked": 55721168838171,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15kkg1mK1tCGgqqo3c1CghtKCQsBEAPPjYNNmmRT3r29FeRX",
+        "identity": {
+            "display": "ANAMIX",
+            "legal": "ANAMIX",
+            "web": "https://anamix.top/",
+            "riot": "@dbpatty:matrix.org",
+            "email": "anamix@polkadot.pro",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 57443339158597,
+        "commission": "5%"
+    }
+]

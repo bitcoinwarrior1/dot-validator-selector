@@ -1,0 +1,167 @@
+[
+    {
+        "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
+        "identity": {
+            "display": "RockX_Polkadot",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 218656712570788,
+        "commission": "10%"
+    },
+    {
+        "accountId": "16HvKyV9B61hsop3ZY6pWYeV537S29kd9pb9FMrPzx49ym5X",
+        "identity": {
+            "display": "TheGuild",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "theguildsource@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 53516134626625,
+        "commission": "3%"
+    },
+    {
+        "accountId": "1cFsLn7o74nmjbRyDtMAnMpQMc5ZLsjgCSz9Np2mcejUK83",
+        "identity": {
+            "display": "Uno Staking",
+            "legal": "",
+            "web": "",
+            "riot": "@unostaking:matrix.org",
+            "email": "operator@unostaking.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@UnoStaking"
+        },
+        "staked": 55316919213147,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM",
+        "identity": {
+            "display": "Sik | crifferent.de",
+            "legal": "",
+            "web": "",
+            "riot": "@dev0_sik:matrix.org",
+            "email": "simon.kraus@crifferent.de",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@dev0_sik"
+        },
+        "staked": 14377830529675,
+        "commission": "1%"
+    },
+    {
+        "accountId": "12pJGRmrWoZohZVFnGK2hhoMwzCVkjmEjwv3C5wxdnbCAiEk",
+        "identity": {
+            "display": "Watermelon",
+            "legal": "",
+            "web": "",
+            "riot": "@watermelonnode:matrix.org",
+            "email": "watermelon.node@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@WatermelonNode"
+        },
+        "staked": 51142880181284,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15wznkm7fMaJLFaw7B8KrJWkNcWsDziyTKVjrpPhRLMyXsr5",
+        "identity": {
+            "display": "🌐 decentraDOT.com 🌐",
+            "legal": "",
+            "web": "https://decentradot.com",
+            "riot": "",
+            "email": "admin@decentradot.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 88788665380911,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15tfUt4iQNjMyhZiJGBf4EpETE2KqtW1nfJwbBT1MvWjvcK9",
+        "identity": {
+            "display": "Tesla",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "tesla.validation@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50886409548790,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13Hp4FEF7z7famvakw8cgioHqDxcnhnyQkvd1jF4dxn7cayG",
+        "identity": {
+            "display": "VISIONSTAKE 👁‍🗨",
+            "legal": "",
+            "web": "",
+            "riot": "@visionstake:matrix.org",
+            "email": "info@visionstake.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@visionstake"
+        },
+        "staked": 55083312494380,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1",
+        "identity": {
+            "display": "RADIUMBLOCK.COM",
+            "legal": "",
+            "web": "https://radiumblock.com",
+            "riot": "",
+            "email": "info@radiumblock.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@radiumblock"
+        },
+        "staked": 55721168838171,
+        "commission": "3%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 196165090446373,
+        "commission": "5%"
+    },
+    {
+        "accountId": "14N5GT7YTaDBSsLpfxxtCxNdYfgDofGj5wQSfqC1URKHdT8C",
+        "identity": {
+            "display": "RockX_Polkadot3",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 96800805712578,
+        "commission": "3%"
+    }
+]

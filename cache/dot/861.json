@@ -1,0 +1,167 @@
+[
+    {
+        "accountId": "15wznkm7fMaJLFaw7B8KrJWkNcWsDziyTKVjrpPhRLMyXsr5",
+        "identity": {
+            "display": "🌐 decentraDOT.com 🌐",
+            "legal": "",
+            "web": "https://decentradot.com",
+            "riot": "",
+            "email": "admin@decentradot.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 60568079818809,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM",
+        "identity": {
+            "display": "Sik | crifferent.de",
+            "legal": "",
+            "web": "",
+            "riot": "@dev0_sik:matrix.org",
+            "email": "simon.kraus@crifferent.de",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@dev0_sik"
+        },
+        "staked": 14804131225154,
+        "commission": "1%"
+    },
+    {
+        "accountId": "15JjaHXBC6whzYhWiEi7uExsTboAC4tibbeBKPxh5CVk5Jfq",
+        "identity": {
+            "display": "Compute Crypto",
+            "legal": "",
+            "web": "https://computecrypto.com",
+            "riot": "",
+            "email": "computecrypto@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 58197740633833,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13YJ7PrjwAhKHP9m99APDSuvLwWKSQSmKABfJY3H2Cepk2CA",
+        "identity": {
+            "display": "www.isg.dev",
+            "legal": "Inform Systems Group LLC",
+            "web": "https://www.isg.dev/polkadot",
+            "riot": "@ignatev:matrix.org",
+            "email": "info@isg.dev",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@infsysgroup"
+        },
+        "staked": 50551755865711,
+        "commission": "2%"
+    },
+    {
+        "accountId": "129LBt5T1eYtnGHbPYeiiMdmWfokCiiq7z6JBfjnYifiombz",
+        "identity": {
+            "display": "Pioneer",
+            "legal": "",
+            "web": "",
+            "riot": "@sachik0:matrix.org",
+            "email": "pioneer.validator@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 60608009675413,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15tfUt4iQNjMyhZiJGBf4EpETE2KqtW1nfJwbBT1MvWjvcK9",
+        "identity": {
+            "display": "Tesla",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "tesla.validation@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50877312718235,
+        "commission": "5%"
+    },
+    {
+        "accountId": "1cFsLn7o74nmjbRyDtMAnMpQMc5ZLsjgCSz9Np2mcejUK83",
+        "identity": {
+            "display": "Uno Staking",
+            "legal": "",
+            "web": "",
+            "riot": "@unostaking:matrix.org",
+            "email": "operator@unostaking.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@UnoStaking"
+        },
+        "staked": 50569183315895,
+        "commission": "5%"
+    },
+    {
+        "accountId": "16HvKyV9B61hsop3ZY6pWYeV537S29kd9pb9FMrPzx49ym5X",
+        "identity": {
+            "display": "TheGuild",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "theguildsource@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50752484986679,
+        "commission": "3%"
+    },
+    {
+        "accountId": "13EEEhiXeCFpFjVQxmjJsHjr9LFvnAurcnwQ1FDgB5LmJwQp",
+        "identity": {
+            "display": "Swiss Bond",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "swissbondpolkadot@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 102599915080861,
+        "commission": "5%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 201980868172818,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13GtCixw3EZARj52CVbKLrsAzyc7dmmYhDV6quS5yeVCfnh1",
+        "identity": {
+            "display": "RADIUMBLOCK.COM",
+            "legal": "",
+            "web": "https://radiumblock.com",
+            "riot": "",
+            "email": "info@radiumblock.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@radiumblock"
+        },
+        "staked": 56724467979303,
+        "commission": "3%"
+    }
+]
