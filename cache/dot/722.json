@@ -1,0 +1,182 @@
+[
+    {
+        "accountId": "14NGUTHPtUvjbJttSF4qYmX8mUKk75UweWsL3GZyHw4ue2pv",
+        "identity": {
+            "display": "finalbits",
+            "legal": "",
+            "web": "",
+            "riot": "@arifk:matrix.org",
+            "email": "info@finalbits.network",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 55018157638146,
+        "commission": "3%"
+    },
+    {
+        "accountId": "1pnNeueeo2QTr72PXirhUUjdPniysKYETik5orGeq1BFAoU",
+        "identity": {
+            "display": "n-fuse Validator #1 Stash",
+            "legal": "n-fuse GmbH",
+            "web": "https://www.n-fuse.co",
+            "riot": "@vanthome:matrix.org",
+            "email": "crypto-ops@n-fuse.co",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 53835051910677,
+        "commission": "2%"
+    },
+    {
+        "accountId": "12rgiL4r56kPE4PuYmz8snR21isfbrcp5Vbf8VdJe2AWDuus",
+        "identity": {
+            "display": "il4r141",
+            "legal": "",
+            "web": "",
+            "riot": "@il4r141:matrix.org",
+            "email": "il4r141@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 51593119971851,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15cfSaBcTxNr8rV59cbhdMNCRagFr3GE6B3zZRsCp4QHHKPu",
+        "identity": {
+            "display": "✨👍✨ Day7 ✨👍✨",
+            "legal": "",
+            "web": "",
+            "riot": "@day7:matrix.org",
+            "email": "anton@novawallet.io",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 61637427318171,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15BQUqtqhmqJPyvvEH5GYyWffXWKuAgoSUHuG1UeNdb8oDNT",
+        "identity": {
+            "display": "HashQuark",
+            "legal": "HashQuark",
+            "web": "https://hashquark.io",
+            "riot": "",
+            "email": "contact@hashquark.io",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 254676092647859,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15BZW721S3fzMYT8vY3Dt2sVXNTECqwHQ1bNUM8q4fi7EVcc",
+        "identity": {
+            "display": "ilgio",
+            "legal": "",
+            "web": "https://poolgio.com",
+            "riot": "@ilgio:matrix.org",
+            "email": "ilgio@poolgio.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 104845972376222,
+        "commission": "3%"
+    },
+    {
+        "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
+        "identity": {
+            "display": "RockX_Polkadot",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 122234961180986,
+        "commission": "10%"
+    },
+    {
+        "accountId": "13mjnUDrHwYGATFB1FkFkZ1U3kYFsAQfHYTdcc8p3HP1xzZA",
+        "identity": {
+            "display": "Ruby-Node💎",
+            "legal": "",
+            "web": "",
+            "riot": "@tatan:matrix.org",
+            "email": "Ruby-Node@protonmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 66173776550643,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15rb4HVycC1KLHsdaSdV1x2TJAmUkD7PhubmhL3PnGv7RiGY",
+        "identity": {
+            "display": "OnFinality.io",
+            "legal": "OnFinality Ltd",
+            "web": "https://www.onfinality.io",
+            "riot": "@ianhe:matrix.org",
+            "email": "polkadot@onfinality.io",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@OnFinality"
+        },
+        "staked": 122816435543006,
+        "commission": "3%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 162063787430837,
+        "commission": "5%"
+    },
+    {
+        "accountId": "12BkPLskXyXrHhktrinLxVFkPzzvCzCyVCaqHkUEoxMwSzeq",
+        "identity": {
+            "display": "PromoTeam Validator",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "polkadotpromoteam@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@PromoTeamPD"
+        },
+        "staked": 52145569988122,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15UyiZ9rYhrX39Rasc1iE4sdME7WHNFSj8RQT3yuuytd3Nrd",
+        "identity": {
+            "display": "KIRA Staking",
+            "legal": "Kira Core JSC",
+            "web": "http://kiracore.com",
+            "riot": "@kiracore:matrix.org",
+            "email": "partners@kiracore.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@kira_core"
+        },
+        "staked": 127187965296902,
+        "commission": "3%"
+    }
+]

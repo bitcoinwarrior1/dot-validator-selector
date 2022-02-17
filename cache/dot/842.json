@@ -1,0 +1,137 @@
+[
+    {
+        "accountId": "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+        "identity": {
+            "display": "SAXEMBERG",
+            "legal": "",
+            "web": "https://saxemberg.com/",
+            "riot": "@s_saxemberg:matrix.org",
+            "email": "hello@saxemberg.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@saxemberg"
+        },
+        "staked": 169932113608290,
+        "commission": "1.99%"
+    },
+    {
+        "accountId": "16DJbUVKFJp6igLoDxCTPesE2DMgMmiawLXG9jsGpYNTshxt",
+        "identity": {
+            "display": "Sio34",
+            "legal": "",
+            "web": "",
+            "riot": "@sio34:matrix.org",
+            "email": "info@sio34.org",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@Sio347"
+        },
+        "staked": 57971363232471,
+        "commission": "3%"
+    },
+    {
+        "accountId": "16ccn3xe5tAeR8kvzCRTcqHZjMJHvuF2pnLfTqyF1EmMusCU",
+        "identity": {
+            "display": "Stampede",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "stampedecrypto@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 53109326763543,
+        "commission": "5%"
+    },
+    {
+        "accountId": "1mx9gKS9DE4H9dvyxCWKMvuKw8bTDu2cgCcFbKNAhYHwyjD",
+        "identity": {
+            "display": "Sensei",
+            "legal": "Sensei Node",
+            "web": "https://senseinode.com",
+            "riot": "@jchitty:matrix.org",
+            "email": "info@senseinode.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@SenseiNode"
+        },
+        "staked": 58518053924034,
+        "commission": "3%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 204097358201972,
+        "commission": "5%"
+    },
+    {
+        "accountId": "13K6QTYBPMUFTbhZzqToKcfCiWbt4wDPHr3rUPyUessiPR61",
+        "identity": {
+            "display": "Genesis Lab",
+            "legal": "",
+            "web": "https://genesislab.net/",
+            "riot": "@i7495:matrix.org",
+            "email": "team@genesislab.net",
+            "pgpFingerprint": "",
+            "image": "https://hmp.me/cyba",
+            "twitter": "@genesislab_net"
+        },
+        "staked": 114085493938690,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15iwm1HrcGiTZoZenijMTCayRD3hM2RpKde3LrrNxPKAMjTg",
+        "identity": {
+            "display": "UBIK CAPITAL",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "contact@ubik.capital",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@ubikcapital"
+        },
+        "staked": 76224477773684,
+        "commission": "2.98%"
+    },
+    {
+        "accountId": "128iAScPNNZcoSXQuFp1VkgW376KqvZs61g9Y36MuUX78ZZ6",
+        "identity": {
+            "display": "🍀ARISTOPHANES🍀",
+            "legal": "AKIRA YASUKAWA",
+            "web": "https://pythagoras-capital.net",
+            "riot": "@pythagoras.c.i:matrix.org",
+            "email": "subscr3zp@tutanota.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@PythagorasCI"
+        },
+        "staked": 79196824833995,
+        "commission": "3%"
+    },
+    {
+        "accountId": "15KDFYfFjdqhp3MDFEtHuyu9kLpXbT7k1zjx78MphViFdCaU",
+        "identity": {
+            "display": "redpenguin",
+            "legal": "",
+            "web": "",
+            "riot": "@redpenguin:matrix.org",
+            "email": "r3dp3nguin@protonmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 111140984227431,
+        "commission": "5%"
+    }
+]

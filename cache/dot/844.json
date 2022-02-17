@@ -1,0 +1,77 @@
+[
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 205212950077306,
+        "commission": "5%"
+    },
+    {
+        "accountId": "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
+        "identity": {
+            "display": "Coinstudio",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "coinstudio@protonmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 101705479552692,
+        "commission": "5%"
+    },
+    {
+        "accountId": "16fmwCAoqJdVtmj7wGEGuFa24WT7x974ZEQsa42x8k9uop1o",
+        "identity": {
+            "display": "Lightning Blocks",
+            "legal": "",
+            "web": "",
+            "riot": "@lightningblocks:matrix.org",
+            "email": "contact@lightningblocks.io",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@LightningBlocks"
+        },
+        "staked": 50110194994382,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15CosmEmAfQAhnxwan18e5TueAe6bDzrqqxg13dToDWr7A8M",
+        "identity": {
+            "display": "COSMOON",
+            "legal": "",
+            "web": "",
+            "riot": "@gregorst:matrix.org",
+            "email": "cosmoon@gregorst.org",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50014457321045,
+        "commission": "5%"
+    },
+    {
+        "accountId": "12rgiL4r56kPE4PuYmz8snR21isfbrcp5Vbf8VdJe2AWDuus",
+        "identity": {
+            "display": "il4r141",
+            "legal": "",
+            "web": "",
+            "riot": "@il4r141:matrix.org",
+            "email": "il4r141@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50008992533208,
+        "commission": "5%"
+    }
+]

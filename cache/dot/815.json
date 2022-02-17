@@ -1,0 +1,152 @@
+[
+    {
+        "accountId": "15CosmEmAfQAhnxwan18e5TueAe6bDzrqqxg13dToDWr7A8M",
+        "identity": {
+            "display": "COSMOON",
+            "legal": "",
+            "web": "",
+            "riot": "@gregorst:matrix.org",
+            "email": "cosmoon@gregorst.org",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 51049371684381,
+        "commission": "5%"
+    },
+    {
+        "accountId": "15iwm1HrcGiTZoZenijMTCayRD3hM2RpKde3LrrNxPKAMjTg",
+        "identity": {
+            "display": "UBIK CAPITAL",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "contact@ubik.capital",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@ubikcapital"
+        },
+        "staked": 73621092592897,
+        "commission": "2.98%"
+    },
+    {
+        "accountId": "1mx9gKS9DE4H9dvyxCWKMvuKw8bTDu2cgCcFbKNAhYHwyjD",
+        "identity": {
+            "display": "Sensei",
+            "legal": "Sensei Node",
+            "web": "https://senseinode.com",
+            "riot": "@jchitty:matrix.org",
+            "email": "info@senseinode.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@SenseiNode"
+        },
+        "staked": 55852695804023,
+        "commission": "3%"
+    },
+    {
+        "accountId": "14N5GT7YTaDBSsLpfxxtCxNdYfgDofGj5wQSfqC1URKHdT8C",
+        "identity": {
+            "display": "RockX_Polkadot3",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 93681690115929,
+        "commission": "3%"
+    },
+    {
+        "accountId": "148HzdSuFsDrNKnAHFs81BJzZxmKgwEC6Pmpw2QJnTy3Hv3R",
+        "identity": {
+            "display": "CoinFund/Grassfed",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@coinfund_io"
+        },
+        "staked": 191298305332258,
+        "commission": "5%"
+    },
+    {
+        "accountId": "16UvTJteZiHfoGjzMK5fAxwZd3wkbsFb2C1SKsMLCtxRhNWv",
+        "identity": {
+            "display": "Mitch-Wariner",
+            "legal": "",
+            "web": "",
+            "riot": "@mitch-wariner:matrix.org",
+            "email": "dot.miners.science@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 53152032371125,
+        "commission": "3%"
+    },
+    {
+        "accountId": "14BeKcfcvJSJjvu9GZ2CA8EQ3XkK9J1HdwDrfz5Sg5ERDnrP",
+        "identity": {
+            "display": "ETHICAL VALIDATORS 0",
+            "legal": "ETHICAL VALIDATORS",
+            "web": "http://www.ethicalvalidators.com",
+            "riot": "@evaluators:matrix.org",
+            "email": "ethical.validators@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@EValidators"
+        },
+        "staked": 15090450035974,
+        "commission": "1%"
+    },
+    {
+        "accountId": "15tfUt4iQNjMyhZiJGBf4EpETE2KqtW1nfJwbBT1MvWjvcK9",
+        "identity": {
+            "display": "Tesla",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "tesla.validation@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 50180133572981,
+        "commission": "5%"
+    },
+    {
+        "accountId": "14Y4s6V1PWrwBLvxW47gcYgZCGTYekmmzvFsK1kiqNH2d84t",
+        "identity": {
+            "display": "RockX_Polkadot",
+            "legal": "RockX",
+            "web": "https://www.rockx.com",
+            "riot": "",
+            "email": "support@rockx.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rockx_official"
+        },
+        "staked": 207171746029951,
+        "commission": "10%"
+    },
+    {
+        "accountId": "16CdHjb4nxVwF6uwmPm6A29pc4ubnLiY7UqasMxt7cT9BcoK",
+        "identity": {
+            "display": "NEWDEAL",
+            "legal": "",
+            "web": "",
+            "riot": "@paride_f:matrix.org",
+            "email": "newdeal.validator@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 105424775916267,
+        "commission": "5%"
+    }
+]

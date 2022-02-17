@@ -1,0 +1,197 @@
+[
+    {
+        "accountId": "F7hDMvu33u14QPXbkBzqF4CuuyyruB2xi6D3V7aUbY8KGpr",
+        "identity": {
+            "display": "SynerWork Inc",
+            "legal": "",
+            "web": "",
+            "riot": "",
+            "email": "staking@synerwork.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 103500000000000,
+        "commission": "2%"
+    },
+    {
+        "accountId": "GD6MTUJG9Ym7tS6PLF42yreHpqpvFgPcqPwcyRGiMv2TSGR",
+        "identity": {
+            "display": "Zetetic Validator",
+            "legal": "",
+            "web": "",
+            "riot": "@zeteticvalidator:matrix.org",
+            "email": "operator@zeteticvalidator.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@ZeticValidator"
+        },
+        "staked": 100098346487573,
+        "commission": "10%"
+    },
+    {
+        "accountId": "F7Wa1su7NRSr6LWuhPWdXcQALDyzm8Vmev7WtV5jVPtJELs",
+        "identity": {
+            "display": "ANAMIX",
+            "legal": "ANAMIX",
+            "web": "https://anamix.top/",
+            "riot": "@dbpatty:matrix.org",
+            "email": "anamix@polkadot.pro",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 900665650031888,
+        "commission": "5%"
+    },
+    {
+        "accountId": "FSUwnu7Ehf7sKByaXvSTYoAfuTxybwqhubeGfQkho94syqo",
+        "identity": {
+            "display": "Web3 VC",
+            "legal": "Web3 Venture Capital",
+            "web": "https://web3.vc",
+            "riot": "@web3.vc:matrix.org",
+            "email": "hi@web3.vc",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@VentureWeb3"
+        },
+        "staked": 2372470551513860,
+        "commission": "10%"
+    },
+    {
+        "accountId": "J12kKQz1qcCHBg36Txz2k9mNKYERhjKRRSshwUghT11medm",
+        "identity": {
+            "display": "lloyds.tech",
+            "legal": "LLoyds Blockchain Technology",
+            "web": "https://lloyds.tech",
+            "riot": "@lloyds.tech:matrix.org",
+            "email": "tech@lloyds.tech",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@lloyds_tech"
+        },
+        "staked": 101915572326364,
+        "commission": "6%"
+    },
+    {
+        "accountId": "J19LYGghRCe4Ct3VW4Vz1amMoUgogS1sh2FQvPWroKcDdb1",
+        "identity": {
+            "display": "SAXEMBERG",
+            "legal": "",
+            "web": "https://saxemberg.com/",
+            "riot": "@s_saxemberg:matrix.org",
+            "email": "",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@saxemberg"
+        },
+        "staked": 111723785320615,
+        "commission": "2%"
+    },
+    {
+        "accountId": "Ew4JDQENKYKdBkgW6bJfFqYYXaDw4kupXBrXyMcJoU6Lc9Z",
+        "identity": {
+            "display": "Amiga Staking",
+            "legal": "",
+            "web": "",
+            "riot": "@amigastaking:matrix.org",
+            "email": "operator@amigastaking.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@AmigaStaking"
+        },
+        "staked": 104798433056193,
+        "commission": "10%"
+    },
+    {
+        "accountId": "EAkB83iUA6vJFXqSzuwYXq8vdZD5kcKgTP7BZkVRQ3iCVqC",
+        "identity": {
+            "display": "TransX",
+            "legal": "TransX",
+            "web": "https://transx.io",
+            "riot": "@transx:matrix.org",
+            "email": "silver@transx.io",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@TransX11"
+        },
+        "staked": 4008684796188462,
+        "commission": "5%"
+    },
+    {
+        "accountId": "EyTegKZ9DBvMkV6pMbjx2fRk3N2VLNNduuto1PGpYcEqRrX",
+        "identity": {
+            "display": "andreita-validator-0",
+            "legal": "",
+            "web": "",
+            "riot": "@andreita:matrix.org",
+            "email": "andreaf.speziale@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@andreafspeziale"
+        },
+        "staked": 119865923698888,
+        "commission": "10%"
+    },
+    {
+        "accountId": "Gve4JFfF5YkZJNwKTbRVTQCkLXJJhzjJszJjxPvHLb9fho5",
+        "identity": {
+            "display": "BRAVEBAT",
+            "legal": "",
+            "web": "https://bravebat.info",
+            "riot": "@bravebat:matrix.org",
+            "email": "bravebatinfo@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@BraveBatInfo"
+        },
+        "staked": 104363846764723,
+        "commission": "10%"
+    },
+    {
+        "accountId": "HKKT5DjFaUE339m7ZWS2yutjecbUpBcDQZHw2EF7SFqSFJH",
+        "identity": {
+            "display": "RMRK Multisig",
+            "legal": "",
+            "web": "https://rmrk.app",
+            "riot": "",
+            "email": "hello@rmrk.app",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": "@rmrkapp"
+        },
+        "staked": 4085000000000000,
+        "commission": "5%"
+    },
+    {
+        "accountId": "DY3hczPcJjHXScXkKwJZ7vgqTE4bZaCUa56XsAQH8gDzB7x",
+        "identity": {
+            "display": "♞GameTheory♜",
+            "legal": "",
+            "web": "https://gametheory.me",
+            "riot": "@game.theory:matrix.org",
+            "email": "mail@gametheory.me",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 103037167472598,
+        "commission": "10%"
+    },
+    {
+        "accountId": "EDNEfKXHd645DPpBhLZjaEwp4sPhj4STjjS4QrMbFU1FqbZ",
+        "identity": {
+            "display": "luckyve",
+            "legal": "",
+            "web": "",
+            "riot": "@luckyve:matrix.org",
+            "email": "luckyvenode@gmail.com",
+            "pgpFingerprint": "",
+            "image": "",
+            "twitter": ""
+        },
+        "staked": 100000000000000,
+        "commission": "10%"
+    }
+]
