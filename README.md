@@ -43,33 +43,9 @@ selector.getUserValidatorsMeetCriteria(userAccountId);
 > [{ "accountId": "13mK8AssyPekT5cFuYQ7ijKNXcjHPq8Gnx6TxF5eFCAwoLQ", "match": false }, ...]
 ```
 ### via cURL
-Cached snapshots of a particular era can be retrieved via cURL:
+Get the latest snapshot with the default criteria. 
 ```shell
-$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/cache/dot/623.json 
-```
-Or get a cached snapshot of the latest era in the repo:
-```shell
-$ curl https://raw.githubusercontent.com/James-Sangalli/dot-validator-selector/gh-pages/web-sample/dot/latest.json
-```
-
-Example output: 
-
-```
-[{
-    "accountId": "Cs7UFcNBsBV4Y65GsM3bDzpvinMKFQZyt6x9TrhVhc8ps4E",
-    "identity": {
-        "display": "⛓ NOVY ⛓ ",
-        "legal": "NOVY",
-        "web": "https://stake.novy.pw",
-        "riot": "@novy4:matrix.org",
-        "email": "stake@novy.pw",
-        "pgpFingerprint": "",
-        "image": "",
-        "twitter": "@lost_inchains"
-    },
-    "staked": 91697150371972,
-    "commission": "6%"
-}, ...]
+$ curl https://dot-tool-server.herokuapp.com/dot-validator-selector
 ```
 
 
