@@ -19,6 +19,7 @@
   "homepage": "https://github.com/James-Sangalli/dot-validator-selector#readme",
   "dependencies": {
     "@polkadot/api": "^6.0.5",
+    "@polkadot/extension-dapp": "^0.44.6",
     "superagent": "^8.0.3"
   },
   "devDependencies": {
