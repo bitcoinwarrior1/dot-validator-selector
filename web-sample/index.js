@@ -6,10 +6,6 @@ const { web3FromAddress, web3Accounts, web3Enable } = require('./extension');
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    await web3Enable('dot validator selector sample');
-    const allAccounts = await web3Accounts();
-    const injector = await web3FromAddress(allAccounts[0].address);
-
     document.getElementById("submit").addEventListener("click", async () => {
         document.getElementById("status").hidden = false;
         const isKSM = document.getElementById("KSM").checked;
@@ -39,6 +35,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
         document.getElementById("stake").hidden = false;
         document.getElementById("stake").addEventListener("click", async () => {
+            await web3Enable('dot validator selector sample');
+            const allAccounts = await web3Accounts();
+            const injector = await web3FromAddress(allAccounts[0].address);
             if(isKSM) {
                 api = await ApiPromise.create({ provider: new WsProvider(kusamaProvider) });
             } else {
