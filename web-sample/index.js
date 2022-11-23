@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         } else {
             networkKey = "dot";
             eraKey = "dotEra";
-            subscan = "https://subscan.io/account/"
+            subscan = "https://polkadot.subscan.io/account/"
         }
         document.getElementById("validators").innerHTML = results[networkKey].map((v, i) => {
             return `<div class="card">
