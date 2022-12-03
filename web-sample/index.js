@@ -6,6 +6,21 @@ const { web3FromAddress, web3Accounts, web3Enable } = require('./extension');
 
 document.addEventListener("DOMContentLoaded", async () => {
 
+    function addRecommendedPool(pools) {
+        try {
+            const { poolId } = JSON.parse(pools.text).results[0];
+            document.getElementById("pools").innerHTML = `<div class="card">
+                      <div class="container">
+                        <p>Nomination pool of the day</p>
+                        <p>click <a href="https://github.com/TalismanSociety/dot-pool-selector#criteria">here</a> for more info</p>
+                        <p><a href="https://polkadot.js.org/apps/#/staking/pools">Pool ${poolId}</a></p>
+                      </div>
+                    </div>`;
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
     document.getElementById("submit").addEventListener("click", async () => {
         document.getElementById("status").hidden = false;
         const isKSM = document.getElementById("KSM").checked;
@@ -15,15 +30,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         let networkKey;
         let api;
         let subscan;
+        let pools;
         if(isKSM) {
             networkKey = "ksm"
             eraKey = "ksmEra";
-            subscan = "https://kusama.subscan.io/account/"
+            subscan = "https://kusama.subscan.io/account/";
+            pools = await request.get("https://dot-tool-server.herokuapp.com/dot-pool-selector/ksm");
         } else {
             networkKey = "dot";
             eraKey = "dotEra";
-            subscan = "https://polkadot.subscan.io/account/"
+            subscan = "https://polkadot.subscan.io/account/";
+            pools = await request.get("https://dot-tool-server.herokuapp.com/dot-pool-selector/dot");
         }
+        addRecommendedPool(pools);
         document.getElementById("validators").innerHTML = results[networkKey].map((v, i) => {
             return `<div class="card">
                       <div class="container">
