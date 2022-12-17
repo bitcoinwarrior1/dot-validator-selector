@@ -81221,12 +81221,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function addRecommendedPool(pools) {
         try {
-            const poolId = JSON.parse(pools.text).results[0].poolId;
+            const { poolId } = JSON.parse(pools.text).results[0];
             document.getElementById("pools").innerHTML = `<div class="card">
                       <div class="container">
                         <p>Nomination pool of the day</p>
                         <p>click <a href="https://github.com/TalismanSociety/dot-pool-selector#criteria">here</a> for more info</p>
-                        <p><a href="">Pool ${poolId}</a></p>
+                        <p><a href="https://polkadot.js.org/apps/#/staking/pools">Pool ${poolId}</a></p>
                       </div>
                     </div>`;
         } catch (e) {

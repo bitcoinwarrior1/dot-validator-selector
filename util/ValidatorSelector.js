@@ -46,7 +46,12 @@ class ValidatorSelector {
         await this.setEraToCurrentIfZero();
         const validatorDisplays = {}; // used to prevent adding in validators run by the same entity
         const validatorsMeetingCriteria = [];
-        const validators = ValidatorSelector.shuffleArray((await this.api.query.session.validators()));
+        // https://substrate.stackexchange.com/questions/6356/get-all-validators-on-the-network-not-just-the-active-ones
+        const validatorData = await this.api.query.staking.validators.entries();
+        const allValidators = validatorData.map(([key]) => {
+            return key.args.map((k) => k.toHuman());
+        }).join(",").split(",").filter((e) => { return e !== undefined });
+        const validators = ValidatorSelector.shuffleArray(allValidators);
         for(const validator of validators) {
             if(validatorsMeetingCriteria.length === amount) {
                 return validatorsMeetingCriteria;
