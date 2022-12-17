@@ -52,9 +52,6 @@ $ curl https://dot-tool-server.herokuapp.com/dot-validator-selector
 ## See a sample
 If you want to see this module in action for Polkadot or Kusama, you can try it out [here](https://james-sangalli.github.io/dot-validator-selector/). It will randomly select 16/24 validators meeting the criteria for Polkadot/Kusama. 
 
-## Cached validators
-Since this module can be slow to select validators, it is possible to cache them for the current era using `npm run updateCache` and then retrieve them as above with the cURL instructions. You can see some examples in the cache folder [here](https://github.com/James-Sangalli/dot-validator-selector/tree/gh-pages/cache).
-
 
 ## Tip
 - DOT: [J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb](https://polkadot.subscan.io/account/J3qfuceTakrXaiRTf6c7ByVYJjtoiyhoc1aeS5YNLGdqFSb)
